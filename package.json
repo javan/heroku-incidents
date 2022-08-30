@@ -1,0 +1,11 @@
+{
+  "name": "heroku-incidents",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "playwright": "^1.25.1"
+  }
+}
