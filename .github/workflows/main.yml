@@ -17,6 +17,12 @@ jobs:
           node-version-file: ".node-version"
           cache: yarn
 
+      - name: Cache playwright binaries
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}
+
       - run: yarn install --frozen-lockfile
 
       - run: node .
