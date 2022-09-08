@@ -1,5 +1,18 @@
 [
   {
+    "id": 2456,
+    "url": "https://status.heroku.com/incidents/2456",
+    "date": "2022-09-08T20:44:00.000Z",
+    "title": "Database unavailable for Heroku Connect in Virginia region",
+    "downtime": [
+      {
+        "system": "Data",
+        "severity": "yellow",
+        "minutes": 8
+      }
+    ]
+  },
+  {
     "id": 2455,
     "url": "https://status.heroku.com/incidents/2455",
     "date": "2022-08-30T11:24:00.000Z",
