@@ -1,5 +1,32 @@
 [
   {
+    "id": 2462,
+    "url": "https://status.heroku.com/incidents/2462",
+    "date": "2022-09-28T21:07:00.000Z",
+    "title": "Platform API errors affecting Dashboard and Heroku CLI",
+    "downtime": []
+  },
+  {
+    "id": 2461,
+    "url": "https://status.heroku.com/incidents/2461",
+    "date": "2022-09-28T18:59:00.000Z",
+    "title": "Issues with upstream provider",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "red",
+        "minutes": 38
+      }
+    ]
+  },
+  {
+    "id": 2460,
+    "url": "https://status.heroku.com/incidents/2460",
+    "date": "2022-09-28T18:58:00.000Z",
+    "title": "Issues accessing Private Space dynos",
+    "downtime": []
+  },
+  {
     "id": 2459,
     "url": "https://status.heroku.com/incidents/2459",
     "date": "2022-09-28T12:31:00.000Z",
