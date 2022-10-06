@@ -1,5 +1,18 @@
 [
   {
+    "id": 2464,
+    "url": "https://status.heroku.com/incidents/2464",
+    "date": "2022-10-05T20:22:00.000Z",
+    "title": "Issues with Free Dyno Hours",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 179
+      }
+    ]
+  },
+  {
     "id": 2463,
     "url": "https://status.heroku.com/incidents/2463",
     "date": "2022-10-04T19:27:00.000Z",
