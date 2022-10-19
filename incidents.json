@@ -1,5 +1,23 @@
 [
   {
+    "id": 2465,
+    "url": "https://status.heroku.com/incidents/2465",
+    "date": "2022-10-18T21:22:00.000Z",
+    "title": "Issues accessing the Deploy Hooks add-on",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 38
+      },
+      {
+        "system": "Tools",
+        "severity": "yellow",
+        "minutes": 70
+      }
+    ]
+  },
+  {
     "id": 2464,
     "url": "https://status.heroku.com/incidents/2464",
     "date": "2022-10-05T20:22:00.000Z",
