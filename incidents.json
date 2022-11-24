@@ -1,5 +1,18 @@
 [
   {
+    "id": 2469,
+    "url": "https://status.heroku.com/incidents/2469",
+    "date": "2022-11-23T17:58:00.000Z",
+    "title": "HTTP Failures",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 2
+      }
+    ]
+  },
+  {
     "id": 2468,
     "url": "https://status.heroku.com/incidents/2468",
     "date": "2022-11-16T07:36:00.000Z",
