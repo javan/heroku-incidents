@@ -1,5 +1,38 @@
 [
   {
+    "id": 2472,
+    "url": "https://status.heroku.com/incidents/2472",
+    "date": "2022-11-30T13:54:00.000Z",
+    "title": "Heroku Review App creation delays",
+    "downtime": []
+  },
+  {
+    "id": 2471,
+    "url": "https://status.heroku.com/incidents/2471",
+    "date": "2022-11-29T20:48:00.000Z",
+    "title": "DNS propagation delays in Common Runtime and Private Spaces",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 484
+      }
+    ]
+  },
+  {
+    "id": 2470,
+    "url": "https://status.heroku.com/incidents/2470",
+    "date": "2022-11-29T17:33:00.000Z",
+    "title": "Issues with Add-on Provisioning and Management",
+    "downtime": [
+      {
+        "system": "Tools",
+        "severity": "yellow",
+        "minutes": 72
+      }
+    ]
+  },
+  {
     "id": 2469,
     "url": "https://status.heroku.com/incidents/2469",
     "date": "2022-11-23T17:58:00.000Z",
