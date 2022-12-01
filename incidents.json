@@ -1,5 +1,31 @@
 [
   {
+    "id": 2474,
+    "url": "https://status.heroku.com/incidents/2474",
+    "date": "2022-11-30T22:51:00.000Z",
+    "title": "Heroku Routing Availability Issues - Resolved",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 34
+      }
+    ]
+  },
+  {
+    "id": 2473,
+    "url": "https://status.heroku.com/incidents/2473",
+    "date": "2022-11-30T22:50:00.000Z",
+    "title": "DNS propagation delays in Common Runtime and Private Spaces",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 98
+      }
+    ]
+  },
+  {
     "id": 2472,
     "url": "https://status.heroku.com/incidents/2472",
     "date": "2022-11-30T13:54:00.000Z",
