@@ -1,5 +1,18 @@
 [
   {
+    "id": 2475,
+    "url": "https://status.heroku.com/incidents/2475",
+    "date": "2022-12-03T19:02:00.000Z",
+    "title": "Issues with DNS provider",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 55
+      }
+    ]
+  },
+  {
     "id": 2474,
     "url": "https://status.heroku.com/incidents/2474",
     "date": "2022-11-30T22:51:00.000Z",
