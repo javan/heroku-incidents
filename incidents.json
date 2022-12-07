@@ -1,5 +1,18 @@
 [
   {
+    "id": 2477,
+    "url": "https://status.heroku.com/incidents/2477",
+    "date": "2022-12-07T01:28:00.000Z",
+    "title": "DNS propagation delays in Common Runtime and Private Spaces",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 53
+      }
+    ]
+  },
+  {
     "id": 2476,
     "url": "https://status.heroku.com/incidents/2476",
     "date": "2022-12-06T15:28:00.000Z",
