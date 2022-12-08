@@ -1,5 +1,12 @@
 [
   {
+    "id": 2478,
+    "url": "https://status.heroku.com/incidents/2478",
+    "date": "2022-12-08T16:46:00.000Z",
+    "title": "Platform API errors affecting Dashboard and Heroku CLI",
+    "downtime": []
+  },
+  {
     "id": 2477,
     "url": "https://status.heroku.com/incidents/2477",
     "date": "2022-12-07T01:28:00.000Z",
