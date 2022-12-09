@@ -1,5 +1,18 @@
 [
   {
+    "id": 2479,
+    "url": "https://status.heroku.com/incidents/2479",
+    "date": "2022-12-09T00:14:00.000Z",
+    "title": "Routing Performance Disruption",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 155
+      }
+    ]
+  },
+  {
     "id": 2478,
     "url": "https://status.heroku.com/incidents/2478",
     "date": "2022-12-08T16:46:00.000Z",
