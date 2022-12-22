@@ -1,5 +1,12 @@
 [
   {
+    "id": 2480,
+    "url": "https://status.heroku.com/incidents/2480",
+    "date": "2022-12-22T01:51:00.000Z",
+    "title": "Automated Certificate Management unable to complete",
+    "downtime": []
+  },
+  {
     "id": 2479,
     "url": "https://status.heroku.com/incidents/2479",
     "date": "2022-12-09T00:14:00.000Z",
