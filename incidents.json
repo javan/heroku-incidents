@@ -1,5 +1,18 @@
 [
   {
+    "id": 2482,
+    "url": "https://status.heroku.com/incidents/2482",
+    "date": "2023-01-12T10:23:00.000Z",
+    "title": "DNS Resolution Issues Impacting New Apps",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 162
+      }
+    ]
+  },
+  {
     "id": 2481,
     "url": "https://status.heroku.com/incidents/2481",
     "date": "2022-12-29T22:33:00.000Z",
