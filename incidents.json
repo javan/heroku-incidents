@@ -1,5 +1,25 @@
 [
   {
+    "id": 2486,
+    "url": "https://status.heroku.com/incidents/2486",
+    "date": "2023-02-01T01:00:00.000Z",
+    "title": "Inability to connect to Heroku Postgres on Basic plans",
+    "downtime": [
+      {
+        "system": "Data",
+        "severity": "red",
+        "minutes": 287
+      }
+    ]
+  },
+  {
+    "id": 2485,
+    "url": "https://status.heroku.com/incidents/2485",
+    "date": "2023-01-31T21:40:00.000Z",
+    "title": "Heroku Frontend Maintenance on February 7th, 2023 at 20:00 UTC",
+    "downtime": []
+  },
+  {
     "id": 2484,
     "url": "https://status.heroku.com/incidents/2484",
     "date": "2023-01-20T14:13:00.000Z",
