@@ -1,5 +1,18 @@
 [
   {
+    "id": 2488,
+    "url": "https://status.heroku.com/incidents/2488",
+    "date": "2023-02-25T21:29:00.000Z",
+    "title": "Service disruption for eco dynos in Common Runtime US apps",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "red",
+        "minutes": 39
+      }
+    ]
+  },
+  {
     "id": 2487,
     "url": "https://status.heroku.com/incidents/2487",
     "date": "2023-02-08T17:30:00.000Z",
