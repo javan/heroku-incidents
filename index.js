@@ -1,73 +1,115 @@
 import { chromium } from "playwright"
 import { readFile, writeFile } from "fs/promises"
 
-const browser = await chromium.launch()
-const context = await browser.newContext()
-const page = await context.newPage()
+class Incidents {
+  constructor(filename = "incidents.json") {
+    this.filename = filename
+    this.index = new Map
+  }
 
-page.setDefaultTimeout(3000)
+  has(id) {
+    return this.index.has(id)
+  }
 
-let incidents = []
-try {
-  incidents = JSON.parse(await readFile("incidents.json"))
-} catch (error) {
-  console.warn(error)
-}
+  add(incident) {
+    incident.date = new Date(incident.date)
+    this.index.set(incident.id, incident)
+  }
 
-const incidentsById = new Map
+  async load() {
+    const incidents = JSON.parse(await readFile(this.filename))
+    for (const incident of incidents) this.add(incident)
+  }
 
-for (const incident of incidents) {
-  incident.date = new Date(incident.date)
-  incidentsById.set(incident.id, incident)
-}
+  async save() {
+    await writeFile(this.filename, JSON.stringify(this, null, 2) + "\n")
+  }
 
-let pageNumber = 1
+  toJSON() {
+    return [...this.index.values()].sort((a, b) => b.id - a.id)
+  }
 
-while (pageNumber) {
-  const url = `https://status.heroku.com/incidents?page=${pageNumber}`
-  await page.goto(url, { waitUntil: "networkidle" })
-  console.log(url)
-
-  const incidentIds = await page.locator(`a[href^="/incidents/"]`).evaluateAll(elements =>
-    elements.map(element => Number(element.href.match(/incidents\/(\d+)$/)?.[1]))
-  )
-
-  const newIncidentIds = incidentIds.filter(id => !incidentsById.has(id))
-
-  if (newIncidentIds.length) {
-    let incidentExtracted = false
-    for (const id of newIncidentIds) {
-      const incident = await extractIncident(id)
-      if (incident) {
-        incidentExtracted = true
-        incidentsById.set(id, incident)
-        incidents = [...incidentsById.values()].sort((a, b) => b.id - a.id)
-        await writeFile("incidents.json", JSON.stringify(incidents, null, 2) + "\n")
-      }
-      await delay()
-    }
-    if (incidentExtracted) {
-      pageNumber++
-    } else {
-      pageNumber = null
-    }
-  } else {
-    pageNumber = null
+  get size() {
+    return this.index.size
   }
 }
 
-await browser.close()
+class Extractor {
+  constructor() {
+    this.incidents = new Incidents
+  }
 
-async function extractIncident(id) {
-  const url = `https://status.heroku.com/incidents/${id}`
-  await page.goto(url, { waitUntil: "domcontentloaded" })
-  console.log(` - ${url}`)
+  async run() {
+    try {
+      await this.start()
+      await this.extract()
+    } finally {
+      await this.stop()
+    }
+  }
 
-  try {
-    const title = (await page.locator(".incident-title").textContent()).trim()
-    const date  = new Date((await page.locator(".timestamp").last().textContent()).trim().replace(/^posted [^,]+,/i, "").trim())
+  async start() {
+    await this.incidents.load()
+    this.browser = await chromium.launch()
+    this.context = await this.browser.newContext()
+    this.page = await this.context.newPage()
+    this.page.setDefaultTimeout(5000)
+  }
 
-    const downtime = await page.locator(".incident__system").evaluateAll(elements => {
+  async stop() {
+    await this.incidents.save()
+    await this.browser.close()
+  }
+
+  async extract() {
+    let pageNumber = 1
+    while (pageNumber) {
+      if (await this.extractPage(pageNumber)) {
+        pageNumber++
+      } else {
+        pageNumber = null
+      }
+    }
+  }
+
+  async extractPage(pageNumber) {
+    const { size } = this.incidents
+
+    const url = `https://status.heroku.com/incidents?page=${pageNumber}`
+    await this.page.goto(url, { waitUntil: "networkidle" })
+    console.log(url)
+
+    const ids = await this.page.locator(`a[href^="/incidents/"]`).evaluateAll(elements =>
+      elements.map(element => Number(element.href.match(/incidents\/(\d+)$/)?.[1]))
+    )
+
+    const newIds = ids.filter(id => !this.incidents.has(id))
+    if (!newIds.length) return
+
+    for (const id of newIds) {
+      try {
+        const incident = await this.extractIncindent(id)
+        if (incident) {
+          this.incidents.add(incident)
+          await this.delay
+        }
+      } catch (error) {
+        console.warn(` - failed to extract ${id}`, error)
+      }
+    }
+
+    return this.incidents.size > size
+  }
+
+  async extractIncindent(id) {
+    const url = `https://status.heroku.com/incidents/${id}`
+    await this.page.goto(url, { waitUntil: "domcontentloaded" })
+    console.log(` - ${url}`)
+
+    const title = (await this.page.locator(".incident-title").textContent()).trim()
+    const date  = (await this.page.locator(".timestamp").last().textContent()).trim().replace(/^posted [^,]+,/i, "").trim()
+
+    const downtime = await this.page.locator(".incident__system").evaluateAll(elements => {
       return elements.map(element => {
         const system = element.querySelector(".incident__system__name").textContent.trim()
 
@@ -82,11 +124,11 @@ async function extractIncident(id) {
     })
 
     return { id, url, date, title, downtime }
-  } catch (error) {
-    console.warn(error)
+  }
+
+  get delay() {
+    return new Promise(resolve => setTimeout(resolve, 100 + Math.random() * 150))
   }
 }
 
-function delay(ms = 250) {
-  return new Promise(resolve => setTimeout(resolve, ms))
-}
+new Extractor().run()
