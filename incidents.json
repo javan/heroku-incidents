@@ -1,5 +1,37 @@
 [
   {
+    "id": 2524,
+    "url": "https://status.heroku.com/incidents/2524",
+    "date": "2023-03-16T21:57:00.000Z",
+    "title": "Platform API Outage",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 297
+      },
+      {
+        "system": "Tools",
+        "severity": "red",
+        "minutes": 297
+      }
+    ]
+  },
+  {
+    "id": 2523,
+    "url": "https://status.heroku.com/incidents/2523",
+    "date": "2023-03-16T20:09:00.000Z",
+    "title": "Internal Service Maintenance for Heroku Data Services scheduled on Tuesday March 28, 2023 18:00 UTC",
+    "downtime": []
+  },
+  {
+    "id": 2522,
+    "url": "https://status.heroku.com/incidents/2522",
+    "date": "2023-03-16T20:05:00.000Z",
+    "title": "Salesforce Functions Maintenance scheduled on March 22, 2023 at 18:00 UTC",
+    "downtime": []
+  },
+  {
     "id": 2489,
     "url": "https://status.heroku.com/incidents/2489",
     "date": "2023-03-09T19:49:00.000Z",
