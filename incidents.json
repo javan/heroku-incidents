@@ -1,5 +1,18 @@
 [
   {
+    "id": 2531,
+    "url": "https://status.heroku.com/incidents/2531",
+    "date": "2023-04-06T22:30:00.000Z",
+    "title": "Issues with Dyno provisioning in Common Runtime in EU and US regions",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "red",
+        "minutes": 16
+      }
+    ]
+  },
+  {
     "id": 2530,
     "url": "https://status.heroku.com/incidents/2530",
     "date": "2023-04-06T05:05:00.000Z",
