@@ -1,5 +1,18 @@
 [
   {
+    "id": 2533,
+    "url": "https://status.heroku.com/incidents/2533",
+    "date": "2023-04-14T19:58:00.000Z",
+    "title": "Issues with the build system preventing dyno startup",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "red",
+        "minutes": 24
+      }
+    ]
+  },
+  {
     "id": 2531,
     "url": "https://status.heroku.com/incidents/2531",
     "date": "2023-04-06T22:30:00.000Z",
