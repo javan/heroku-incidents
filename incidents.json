@@ -1,5 +1,12 @@
 [
   {
+    "id": 2534,
+    "url": "https://status.heroku.com/incidents/2534",
+    "date": "2023-04-19T01:50:00.000Z",
+    "title": "Heroku Connect add-ons in Virginia and Virginia-4 regions will undergo a service update on May 09, 2023, starting at 11:30 UTC.",
+    "downtime": []
+  },
+  {
     "id": 2533,
     "url": "https://status.heroku.com/incidents/2533",
     "date": "2023-04-14T19:58:00.000Z",
