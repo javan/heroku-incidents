@@ -1,5 +1,31 @@
 [
   {
+    "id": 2540,
+    "url": "https://status.heroku.com/incidents/2540",
+    "date": "2023-05-02T09:11:00.000Z",
+    "title": "Issues with Heroku API, Dashboard, and CLI",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "red",
+        "minutes": 114
+      }
+    ]
+  },
+  {
+    "id": 2539,
+    "url": "https://status.heroku.com/incidents/2539",
+    "date": "2023-05-02T02:06:00.000Z",
+    "title": "Issues with Heroku API, Dashboard, and CLI",
+    "downtime": [
+      {
+        "system": "Tools",
+        "severity": "red",
+        "minutes": 15
+      }
+    ]
+  },
+  {
     "id": 2538,
     "url": "https://status.heroku.com/incidents/2538",
     "date": "2023-04-25T20:17:00.000Z",
