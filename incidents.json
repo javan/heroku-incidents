@@ -1,5 +1,36 @@
 [
   {
+    "id": 2555,
+    "url": "https://status.heroku.com/incidents/2555",
+    "date": "2023-05-31T02:46:00.000Z",
+    "title": "Issues with Heroku Platform API, Dashboard and CLI",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 55
+      },
+      {
+        "system": "Tools",
+        "severity": "red",
+        "minutes": 20
+      }
+    ]
+  },
+  {
+    "id": 2554,
+    "url": "https://status.heroku.com/incidents/2554",
+    "date": "2023-05-30T20:35:00.000Z",
+    "title": "Common Runtime Apps Throwing H10 Errors",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 275
+      }
+    ]
+  },
+  {
     "id": 2553,
     "url": "https://status.heroku.com/incidents/2553",
     "date": "2023-05-25T22:17:00.000Z",
