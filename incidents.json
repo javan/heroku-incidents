@@ -1,5 +1,12 @@
 [
   {
+    "id": 2559,
+    "url": "https://status.heroku.com/incidents/2559",
+    "date": "2023-06-09T16:46:00.000Z",
+    "title": "Heroku Builds API maintenance on Thursday, June 22, 2023, at 14:00 UTC (10:00 EDT)",
+    "downtime": []
+  },
+  {
     "id": 2558,
     "url": "https://status.heroku.com/incidents/2558",
     "date": "2023-06-08T15:57:00.000Z",
