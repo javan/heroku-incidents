@@ -1,5 +1,12 @@
 [
   {
+    "id": 2562,
+    "url": "https://status.heroku.com/incidents/2562",
+    "date": "2023-06-30T17:31:00.000Z",
+    "title": "Heroku Support Self-Service Tools Maintenance on July 6, 2023 at 16:00 UTC (12:00 EDT)",
+    "downtime": []
+  },
+  {
     "id": 2561,
     "url": "https://status.heroku.com/incidents/2561",
     "date": "2023-06-23T17:40:00.000Z",
