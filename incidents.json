@@ -1,5 +1,25 @@
 [
   {
+    "id": 2564,
+    "url": "https://status.heroku.com/incidents/2564",
+    "date": "2023-07-11T13:44:00.000Z",
+    "title": "Heroku Postgres Multi-Tenant Host Outage",
+    "downtime": [
+      {
+        "system": "Data",
+        "severity": "yellow",
+        "minutes": 313
+      }
+    ]
+  },
+  {
+    "id": 2563,
+    "url": "https://status.heroku.com/incidents/2563",
+    "date": "2023-07-11T06:23:00.000Z",
+    "title": "Heroku Front-End Dashboards Service Update on Wednesday July 26 at 17:30 UTC (13:30  EDT)",
+    "downtime": []
+  },
+  {
     "id": 2562,
     "url": "https://status.heroku.com/incidents/2562",
     "date": "2023-06-30T17:31:00.000Z",
