@@ -1,5 +1,18 @@
 [
   {
+    "id": 2568,
+    "url": "https://status.heroku.com/incidents/2568",
+    "date": "2023-07-26T04:53:00.000Z",
+    "title": "Issues with upstream DNS provider",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 67
+      }
+    ]
+  },
+  {
     "id": 2567,
     "url": "https://status.heroku.com/incidents/2567",
     "date": "2023-07-21T21:08:00.000Z",
