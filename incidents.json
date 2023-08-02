@@ -1,5 +1,12 @@
 [
   {
+    "id": 2576,
+    "url": "https://status.heroku.com/incidents/2576",
+    "date": "2023-08-02T15:42:00.000Z",
+    "title": "Heroku Dashboard Redirect Issues",
+    "downtime": []
+  },
+  {
     "id": 2575,
     "url": "https://status.heroku.com/incidents/2575",
     "date": "2023-07-31T20:45:00.000Z",
