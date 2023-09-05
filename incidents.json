@@ -1,5 +1,31 @@
 [
   {
+    "id": 2587,
+    "url": "https://status.heroku.com/incidents/2587",
+    "date": "2023-09-05T08:57:00.000Z",
+    "title": "Intermittent build failures",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 343
+      }
+    ]
+  },
+  {
+    "id": 2586,
+    "url": "https://status.heroku.com/incidents/2586",
+    "date": "2023-09-04T22:21:00.000Z",
+    "title": "Investigating Issues with build failures",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 451
+      }
+    ]
+  },
+  {
     "id": 2585,
     "url": "https://status.heroku.com/incidents/2585",
     "date": "2023-08-30T17:46:00.000Z",
