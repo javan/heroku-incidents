@@ -1,5 +1,12 @@
 [
   {
+    "id": 2601,
+    "url": "https://status.heroku.com/incidents/2601",
+    "date": "2023-11-06T19:38:00.000Z",
+    "title": "Issue with new user signups",
+    "downtime": []
+  },
+  {
     "id": 2600,
     "url": "https://status.heroku.com/incidents/2600",
     "date": "2023-11-06T16:39:00.000Z",
