@@ -1,5 +1,31 @@
 [
   {
+    "id": 2603,
+    "url": "https://status.heroku.com/incidents/2603",
+    "date": "2023-11-08T16:02:00.000Z",
+    "title": "Issues with upstream DNS provider",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 61
+      }
+    ]
+  },
+  {
+    "id": 2602,
+    "url": "https://status.heroku.com/incidents/2602",
+    "date": "2023-11-07T21:01:00.000Z",
+    "title": "Platform API Outage",
+    "downtime": [
+      {
+        "system": "Tools",
+        "severity": "red",
+        "minutes": 90
+      }
+    ]
+  },
+  {
     "id": 2601,
     "url": "https://status.heroku.com/incidents/2601",
     "date": "2023-11-06T19:38:00.000Z",
