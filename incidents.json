@@ -1,5 +1,18 @@
 [
   {
+    "id": 2604,
+    "url": "https://status.heroku.com/incidents/2604",
+    "date": "2023-11-15T19:57:00.000Z",
+    "title": "Issues with Heroku Builds",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 20
+      }
+    ]
+  },
+  {
     "id": 2603,
     "url": "https://status.heroku.com/incidents/2603",
     "date": "2023-11-08T16:02:00.000Z",
