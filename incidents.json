@@ -1,5 +1,12 @@
 [
   {
+    "id": 2605,
+    "url": "https://status.heroku.com/incidents/2605",
+    "date": "2023-11-17T16:10:00.000Z",
+    "title": "Heroku Maintenance scheduled on December 7th, 2023 at 2:00AM UTC (9:00pm EDT, December 6th)",
+    "downtime": []
+  },
+  {
     "id": 2604,
     "url": "https://status.heroku.com/incidents/2604",
     "date": "2023-11-15T19:57:00.000Z",
