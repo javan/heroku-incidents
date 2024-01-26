@@ -1,5 +1,19 @@
 [
   {
+    "id": 2610,
+    "url": "https://status.heroku.com/incidents/2610",
+    "date": "2024-01-26T16:30:00.000Z",
+    "title": "Heroku Maintenance scheduled on February 9th, 2024 at 2:00AM UTC (9:00PM EST, February 8th)",
+    "downtime": []
+  },
+  {
+    "id": 2609,
+    "url": "https://status.heroku.com/incidents/2609",
+    "date": "2024-01-25T20:05:00.000Z",
+    "title": "Delays/failures in Release phase",
+    "downtime": []
+  },
+  {
     "id": 2608,
     "url": "https://status.heroku.com/incidents/2608",
     "date": "2024-01-09T20:35:00.000Z",
