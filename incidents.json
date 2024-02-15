@@ -1,5 +1,23 @@
 [
   {
+    "id": 2614,
+    "url": "https://status.heroku.com/incidents/2614",
+    "date": "2024-02-15T02:15:00.000Z",
+    "title": "Heroku API experiencing higher latency",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 317
+      },
+      {
+        "system": "Tools",
+        "severity": "yellow",
+        "minutes": 317
+      }
+    ]
+  },
+  {
     "id": 2612,
     "url": "https://status.heroku.com/incidents/2612",
     "date": "2024-02-14T00:56:00.000Z",
