@@ -1,5 +1,31 @@
 [
   {
+    "id": 2648,
+    "url": "https://status.heroku.com/incidents/2648",
+    "date": "2024-02-23T16:07:00.000Z",
+    "title": "Dashboard Issue with changing dyno sizes via Web UI",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 20
+      }
+    ]
+  },
+  {
+    "id": 2647,
+    "url": "https://status.heroku.com/incidents/2647",
+    "date": "2024-02-23T12:34:00.000Z",
+    "title": "Data Dashboard Issue",
+    "downtime": [
+      {
+        "system": "Data",
+        "severity": "yellow",
+        "minutes": 13
+      }
+    ]
+  },
+  {
     "id": 2614,
     "url": "https://status.heroku.com/incidents/2614",
     "date": "2024-02-15T02:15:00.000Z",
