@@ -1,5 +1,19 @@
 [
   {
+    "id": 2654,
+    "url": "https://status.heroku.com/incidents/2654",
+    "date": "2024-04-02T18:59:00.000Z",
+    "title": "Issues Viewing and Configuring Dashboard Notifications",
+    "downtime": []
+  },
+  {
+    "id": 2653,
+    "url": "https://status.heroku.com/incidents/2653",
+    "date": "2024-04-02T17:39:00.000Z",
+    "title": "No Impact to Heroku Customers for CVE-2024-3094",
+    "downtime": []
+  },
+  {
     "id": 2652,
     "url": "https://status.heroku.com/incidents/2652",
     "date": "2024-03-26T22:37:00.000Z",
