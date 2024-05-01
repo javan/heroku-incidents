@@ -1,5 +1,18 @@
 [
   {
+    "id": 2661,
+    "url": "https://status.heroku.com/incidents/2661",
+    "date": "2024-04-30T23:58:00.000Z",
+    "title": "Platform API Outage",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 21
+      }
+    ]
+  },
+  {
     "id": 2660,
     "url": "https://status.heroku.com/incidents/2660",
     "date": "2024-04-25T21:15:00.000Z",
