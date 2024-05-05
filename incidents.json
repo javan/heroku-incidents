@@ -1,5 +1,12 @@
 [
   {
+    "id": 2662,
+    "url": "https://status.heroku.com/incidents/2662",
+    "date": "2024-05-04T05:30:00.000Z",
+    "title": "DNS propagation delays",
+    "downtime": []
+  },
+  {
     "id": 2661,
     "url": "https://status.heroku.com/incidents/2661",
     "date": "2024-04-30T23:58:00.000Z",
