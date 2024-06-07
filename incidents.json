@@ -1,5 +1,12 @@
 [
   {
+    "id": 2670,
+    "url": "https://status.heroku.com/incidents/2670",
+    "date": "2024-06-06T22:30:00.000Z",
+    "title": "Heroku Front End Authentication Outage",
+    "downtime": []
+  },
+  {
     "id": 2669,
     "url": "https://status.heroku.com/incidents/2669",
     "date": "2024-05-28T23:22:00.000Z",
