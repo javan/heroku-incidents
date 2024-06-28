@@ -1,5 +1,18 @@
 [
   {
+    "id": 2671,
+    "url": "https://status.heroku.com/incidents/2671",
+    "date": "2024-06-26T15:32:00.000Z",
+    "title": "Heroku Connect Provisioning Errors",
+    "downtime": [
+      {
+        "system": "Data",
+        "severity": "yellow",
+        "minutes": 1547
+      }
+    ]
+  },
+  {
     "id": 2670,
     "url": "https://status.heroku.com/incidents/2670",
     "date": "2024-06-06T22:30:00.000Z",
