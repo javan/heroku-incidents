@@ -1,5 +1,31 @@
 [
   {
+    "id": 2673,
+    "url": "https://status.heroku.com/incidents/2673",
+    "date": "2024-07-25T06:24:00.000Z",
+    "title": "Potential Platform Connectivity Issues",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 118
+      }
+    ]
+  },
+  {
+    "id": 2672,
+    "url": "https://status.heroku.com/incidents/2672",
+    "date": "2024-07-24T17:47:00.000Z",
+    "title": "Potential Platform Issues",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 123
+      }
+    ]
+  },
+  {
     "id": 2671,
     "url": "https://status.heroku.com/incidents/2671",
     "date": "2024-06-26T15:32:00.000Z",
