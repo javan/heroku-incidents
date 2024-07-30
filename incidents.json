@@ -1,5 +1,18 @@
 [
   {
+    "id": 2678,
+    "url": "https://status.heroku.com/incidents/2678",
+    "date": "2024-07-30T16:59:00.000Z",
+    "title": "Issues with Essential Tier Databases in EU region",
+    "downtime": [
+      {
+        "system": "Data",
+        "severity": "yellow",
+        "minutes": 18
+      }
+    ]
+  },
+  {
     "id": 2677,
     "url": "https://status.heroku.com/incidents/2677",
     "date": "2024-07-29T16:52:00.000Z",
