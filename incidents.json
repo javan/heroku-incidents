@@ -1,5 +1,31 @@
 [
   {
+    "id": 2685,
+    "url": "https://status.heroku.com/incidents/2685",
+    "date": "2024-10-09T13:46:00.000Z",
+    "title": "Routing failures on Common Runtime, EU region",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 169
+      }
+    ]
+  },
+  {
+    "id": 2684,
+    "url": "https://status.heroku.com/incidents/2684",
+    "date": "2024-10-08T18:10:00.000Z",
+    "title": "Routing failures on Common Runtime, EU region",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "red",
+        "minutes": 282
+      }
+    ]
+  },
+  {
     "id": 2682,
     "url": "https://status.heroku.com/incidents/2682",
     "date": "2024-09-09T13:30:00.000Z",
