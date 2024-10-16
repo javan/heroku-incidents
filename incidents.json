@@ -1,5 +1,25 @@
 [
   {
+    "id": 2719,
+    "url": "https://status.heroku.com/incidents/2719",
+    "date": "2024-10-16T02:01:00.000Z",
+    "title": "Issues with Buildpacks when using a GitHub URL",
+    "downtime": [
+      {
+        "system": "Tools",
+        "severity": "yellow",
+        "minutes": 101
+      }
+    ]
+  },
+  {
+    "id": 2718,
+    "url": "https://status.heroku.com/incidents/2718",
+    "date": "2024-10-15T20:19:00.000Z",
+    "title": "Heroku Maintenance scheduled on Thursday, October 31, 2024 at 01:00 UTC (Wednesday, October 30, 21:00 EDT)",
+    "downtime": []
+  },
+  {
     "id": 2685,
     "url": "https://status.heroku.com/incidents/2685",
     "date": "2024-10-09T13:46:00.000Z",
