@@ -1,5 +1,23 @@
 [
   {
+    "id": 2720,
+    "url": "https://status.heroku.com/incidents/2720",
+    "date": "2024-10-16T20:12:00.000Z",
+    "title": "Open-Source Repository Engagement Data",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 1265
+      },
+      {
+        "system": "Tools",
+        "severity": "yellow",
+        "minutes": 1265
+      }
+    ]
+  },
+  {
     "id": 2719,
     "url": "https://status.heroku.com/incidents/2719",
     "date": "2024-10-16T02:01:00.000Z",
