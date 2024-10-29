@@ -1,5 +1,18 @@
 [
   {
+    "id": 2721,
+    "url": "https://status.heroku.com/incidents/2721",
+    "date": "2024-10-28T19:39:00.000Z",
+    "title": "HTTP Redirect Loop on Common Runtime, EU region",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 16
+      }
+    ]
+  },
+  {
     "id": 2720,
     "url": "https://status.heroku.com/incidents/2720",
     "date": "2024-10-16T20:12:00.000Z",
