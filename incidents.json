@@ -1,5 +1,18 @@
 [
   {
+    "id": 2722,
+    "url": "https://status.heroku.com/incidents/2722",
+    "date": "2024-10-30T17:44:00.000Z",
+    "title": "Application Language Metrics and Release Phase Reporting Delay",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 64
+      }
+    ]
+  },
+  {
     "id": 2721,
     "url": "https://status.heroku.com/incidents/2721",
     "date": "2024-10-28T19:39:00.000Z",
