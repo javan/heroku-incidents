@@ -1,5 +1,12 @@
 [
   {
+    "id": 2723,
+    "url": "https://status.heroku.com/incidents/2723",
+    "date": "2024-11-11T21:17:00.000Z",
+    "title": "Issues accessing Heroku Dashboard",
+    "downtime": []
+  },
+  {
     "id": 2722,
     "url": "https://status.heroku.com/incidents/2722",
     "date": "2024-10-30T17:44:00.000Z",
