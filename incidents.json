@@ -1,5 +1,12 @@
 [
   {
+    "id": 2724,
+    "url": "https://status.heroku.com/incidents/2724",
+    "date": "2024-11-16T23:31:00.000Z",
+    "title": "Missing API Events from Application Logs",
+    "downtime": []
+  },
+  {
     "id": 2723,
     "url": "https://status.heroku.com/incidents/2723",
     "date": "2024-11-11T21:17:00.000Z",
