@@ -1,5 +1,18 @@
 [
   {
+    "id": 2726,
+    "url": "https://status.heroku.com/incidents/2726",
+    "date": "2024-11-19T22:02:00.000Z",
+    "title": "Intermittent Delays in Private Space Creation",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 30
+      }
+    ]
+  },
+  {
     "id": 2724,
     "url": "https://status.heroku.com/incidents/2724",
     "date": "2024-11-16T23:31:00.000Z",
