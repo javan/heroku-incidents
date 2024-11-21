@@ -1,5 +1,18 @@
 [
   {
+    "id": 2727,
+    "url": "https://status.heroku.com/incidents/2727",
+    "date": "2024-11-20T20:15:00.000Z",
+    "title": "Node.js Build Timeout Errors",
+    "downtime": [
+      {
+        "system": "Tools",
+        "severity": "yellow",
+        "minutes": 60
+      }
+    ]
+  },
+  {
     "id": 2726,
     "url": "https://status.heroku.com/incidents/2726",
     "date": "2024-11-19T22:02:00.000Z",
