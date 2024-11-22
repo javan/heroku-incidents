@@ -1,5 +1,18 @@
 [
   {
+    "id": 2728,
+    "url": "https://status.heroku.com/incidents/2728",
+    "date": "2024-11-21T18:06:00.000Z",
+    "title": "Yarn Install Build Timeout Errors for Ruby Apps",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 36
+      }
+    ]
+  },
+  {
     "id": 2727,
     "url": "https://status.heroku.com/incidents/2727",
     "date": "2024-11-20T20:15:00.000Z",
