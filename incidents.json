@@ -1,5 +1,12 @@
 [
   {
+    "id": 2729,
+    "url": "https://status.heroku.com/incidents/2729",
+    "date": "2024-12-06T22:38:00.000Z",
+    "title": "Intermittent issues with authentication and builds",
+    "downtime": []
+  },
+  {
     "id": 2728,
     "url": "https://status.heroku.com/incidents/2728",
     "date": "2024-11-21T18:06:00.000Z",
