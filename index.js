@@ -106,8 +106,8 @@ class Extractor {
     await this.page.goto(url, { waitUntil: "domcontentloaded" })
     console.log(` - ${url}`)
 
-    const title = (await this.page.locator(".incident-title").textContent()).trim()
-    const date  = (await this.page.locator(".timestamp").last().textContent()).trim().replace(/^posted [^,]+,/i, "").trim()
+    const title = (await this.page.locator("h1,h2").first().textContent()).trim()
+    const date  = (await this.page.locator(".timestamp").last().textContent()).replaceAll(/\s+/g, " ").trim().replace(/^posted [^,]+,/i, "").trim()
 
     const downtime = await this.page.locator(".incident__system").evaluateAll(elements => {
       return elements.map(element => {
