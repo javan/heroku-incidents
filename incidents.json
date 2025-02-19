@@ -1,5 +1,31 @@
 [
   {
+    "id": 2763,
+    "url": "https://status.heroku.com/incidents/2763",
+    "date": "2025-02-01T14:24:00.000Z",
+    "title": "Investigating an issue with Review Apps",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 96
+      }
+    ]
+  },
+  {
+    "id": 2730,
+    "url": "https://status.heroku.com/incidents/2730",
+    "date": "2025-01-09T16:44:00.000Z",
+    "title": "Investigating an issue with data.heroku.com",
+    "downtime": [
+      {
+        "system": "Data",
+        "severity": "yellow",
+        "minutes": 12
+      }
+    ]
+  },
+  {
     "id": 2729,
     "url": "https://status.heroku.com/incidents/2729",
     "date": "2024-12-06T22:38:00.000Z",
