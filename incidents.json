@@ -1,5 +1,31 @@
 [
   {
+    "id": 2767,
+    "url": "https://status.heroku.com/incidents/2767",
+    "date": "2025-02-24T19:29:00.000Z",
+    "title": "Issue with Delayed Delivery of Webhooks",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 161
+      }
+    ]
+  },
+  {
+    "id": 2764,
+    "url": "https://status.heroku.com/incidents/2764",
+    "date": "2025-02-24T13:15:00.000Z",
+    "title": "Issue with Platform API in all regions",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 60
+      }
+    ]
+  },
+  {
     "id": 2763,
     "url": "https://status.heroku.com/incidents/2763",
     "date": "2025-02-01T14:24:00.000Z",
