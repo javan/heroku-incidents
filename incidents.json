@@ -1,5 +1,18 @@
 [
   {
+    "id": 2768,
+    "url": "https://status.heroku.com/incidents/2768",
+    "date": "2025-02-28T16:54:00.000Z",
+    "title": "Issue with Data API Calls",
+    "downtime": [
+      {
+        "system": "Data",
+        "severity": "yellow",
+        "minutes": 64
+      }
+    ]
+  },
+  {
     "id": 2767,
     "url": "https://status.heroku.com/incidents/2767",
     "date": "2025-02-24T19:29:00.000Z",
