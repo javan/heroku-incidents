@@ -1,5 +1,18 @@
 [
   {
+    "id": 2769,
+    "url": "https://status.heroku.com/incidents/2769",
+    "date": "2025-03-05T21:33:00.000Z",
+    "title": "Investigating an issue with Automated Certificate Management",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 37
+      }
+    ]
+  },
+  {
     "id": 2768,
     "url": "https://status.heroku.com/incidents/2768",
     "date": "2025-02-28T16:54:00.000Z",
