@@ -1,5 +1,18 @@
 [
   {
+    "id": 2777,
+    "url": "https://status.heroku.com/incidents/2777",
+    "date": "2025-03-25T20:23:00.000Z",
+    "title": "Issue with Application Logs",
+    "downtime": [
+      {
+        "system": "Tools",
+        "severity": "yellow",
+        "minutes": 32
+      }
+    ]
+  },
+  {
     "id": 2776,
     "url": "https://status.heroku.com/incidents/2776",
     "date": "2025-03-20T17:01:00.000Z",
