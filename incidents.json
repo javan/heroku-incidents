@@ -1,5 +1,18 @@
 [
   {
+    "id": 2779,
+    "url": "https://status.heroku.com/incidents/2779",
+    "date": "2025-04-09T20:21:00.000Z",
+    "title": "Issue with Heroku Platform API",
+    "downtime": [
+      {
+        "system": "Tools",
+        "severity": "yellow",
+        "minutes": 67
+      }
+    ]
+  },
+  {
     "id": 2777,
     "url": "https://status.heroku.com/incidents/2777",
     "date": "2025-03-25T20:23:00.000Z",
