@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroku Incidents Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #430098; /* Heroku purple */
+            text-align: center;
+        }
+        .chart-container {
+            margin-top: 30px;
+        }
+        .tooltip {
+            position: absolute;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            pointer-events: none;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .axis text {
+            font-size: 12px;
+        }
+        .axis path, .axis line {
+            fill: none;
+            stroke: #ccc;
+            shape-rendering: crispEdges;
+        }
+        .bar {
+            fill: #430098;
+            transition: opacity 0.2s;
+        }
+        .bar:hover {
+            opacity: 0.8;
+        }
+        .legend {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .legend-color {
+            width: 15px;
+            height: 15px;
+            border-radius: 3px;
+        }
+        .updated-at {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Heroku Incidents Visualization</h1>
+        
+        <div class="chart-container" id="monthly-incidents">
+            <h2>Monthly Incident Count</h2>
+            <div id="monthly-chart"></div>
+        </div>
+        
+        <div class="chart-container" id="incident-duration">
+            <h2>Incident Duration Distribution</h2>
+            <div id="duration-chart"></div>
+        </div>
+
+        <div class="updated-at">
+            Last updated: <span id="update-time"></span>
+        </div>
+    </div>
+
+    <script>
+        // Load the incidents data
+        d3.json('incidents.json').then(data => {
+            // Set the update time
+            document.getElementById('update-time').textContent = new Date().toLocaleString();
+            
+            // Process the data for visualization
+            const incidents = data.filter(d => d.downtime && d.downtime.length > 0);
+            
+            // Calculate monthly incident counts
+            const monthlyData = d3.rollup(
+                incidents,
+                v => v.length,
+                d => d3.timeFormat('%Y-%m')(new Date(d.date))
+            );
+            
+            const monthlyArray = Array.from(monthlyData, ([date, count]) => ({
+                date: d3.timeParse('%Y-%m')(date),
+                count
+            })).sort((a, b) => a.date - b.date);
+            
+            // Calculate incident durations
+            const durationData = incidents.map(incident => {
+                let totalDuration = 0;
+                incident.downtime.forEach(period => {
+                    const start = new Date(period.start);
+                    const end = new Date(period.end || new Date());
+                    totalDuration += (end - start) / (1000 * 60 * 60); // Duration in hours
+                });
+                return {
+                    id: incident.id,
+                    title: incident.title,
+                    date: new Date(incident.date),
+                    duration: totalDuration
+                };
+            }).filter(d => d.duration > 0);
+            
+            // Render monthly incidents chart
+            renderMonthlyChart(monthlyArray);
+            
+            // Render duration chart
+            renderDurationChart(durationData);
+        }).catch(error => {
+            console.error('Error loading data:', error);
+            document.querySelector('.container').innerHTML += `
+                <div style="color: red; text-align: center; margin-top: 20px;">
+                    Error loading data: ${error.message}
+                </div>
+            `;
+        });
+        
+        function renderMonthlyChart(data) {
+            // Set dimensions and margins
+            const margin = {top: 20, right: 30, bottom: 50, left: 60};
+            const width = 1000 - margin.left - margin.right;
+            const height = 400 - margin.top - margin.bottom;
+            
+            // Create SVG
+            const svg = d3.select('#monthly-chart')
+                .append('svg')
+                .attr('width', width + margin.left + margin.right)
+                .attr('height', height + margin.top + margin.bottom)
+                .append('g')
+                .attr('transform', `translate(${margin.left},${margin.top})`);
+            
+            // X scale
+            const x = d3.scaleBand()
+                .domain(data.map(d => d3.timeFormat('%b %Y')(d.date)))
+                .range([0, width])
+                .padding(0.2);
+            
+            // Y scale
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(data, d => d.count) * 1.1])
+                .range([height, 0]);
+            
+            // Add X axis
+            svg.append('g')
+                .attr('class', 'axis x-axis')
+                .attr('transform', `translate(0,${height})`)
+                .call(d3.axisBottom(x))
+                .selectAll('text')
+                .style('text-anchor', 'end')
+                .attr('dx', '-.8em')
+                .attr('dy', '.15em')
+                .attr('transform', 'rotate(-45)');
+            
+            // Add Y axis
+            svg.append('g')
+                .attr('class', 'axis y-axis')
+                .call(d3.axisLeft(y).ticks(5));
+            
+            // Add Y axis label
+            svg.append('text')
+                .attr('transform', 'rotate(-90)')
+                .attr('y', 0 - margin.left)
+                .attr('x', 0 - (height / 2))
+                .attr('dy', '1em')
+                .style('text-anchor', 'middle')
+                .text('Number of Incidents');
+            
+            // Create tooltip
+            const tooltip = d3.select('body')
+                .append('div')
+                .attr('class', 'tooltip')
+                .style('opacity', 0);
+            
+            // Add bars
+            svg.selectAll('.bar')
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr('class', 'bar')
+                .attr('x', d => x(d3.timeFormat('%b %Y')(d.date)))
+                .attr('width', x.bandwidth())
+                .attr('y', d => y(d.count))
+                .attr('height', d => height - y(d.count))
+                .on('mouseover', function(event, d) {
+                    tooltip.transition()
+                        .duration(200)
+                        .style('opacity', .9);
+                    tooltip.html(`
+                        <strong>${d3.timeFormat('%B %Y')(d.date)}</strong><br>
+                        Incidents: ${d.count}
+                    `)
+                    .style('left', (event.pageX + 10) + 'px')
+                    .style('top', (event.pageY - 28) + 'px');
+                })
+                .on('mouseout', function() {
+                    tooltip.transition()
+                        .duration(500)
+                        .style('opacity', 0);
+                });
+        }
+        
+        function renderDurationChart(data) {
+            // Set dimensions and margins
+            const margin = {top: 20, right: 30, bottom: 50, left: 60};
+            const width = 1000 - margin.left - margin.right;
+            const height = 400 - margin.top - margin.bottom;
+            
+            // Create SVG
+            const svg = d3.select('#duration-chart')
+                .append('svg')
+                .attr('width', width + margin.left + margin.right)
+                .attr('height', height + margin.top + margin.bottom)
+                .append('g')
+                .attr('transform', `translate(${margin.left},${margin.top})`);
+            
+            // Sort data by duration
+            data.sort((a, b) => b.duration - a.duration);
+            
+            // Take top 20 incidents by duration
+            const topData = data.slice(0, 20);
+            
+            // X scale
+            const x = d3.scaleLinear()
+                .domain([0, d3.max(topData, d => d.duration) * 1.1])
+                .range([0, width]);
+            
+            // Y scale
+            const y = d3.scaleBand()
+                .domain(topData.map(d => d.id.toString()))
+                .range([0, height])
+                .padding(0.2);
+            
+            // Add X axis
+            svg.append('g')
+                .attr('class', 'axis x-axis')
+                .attr('transform', `translate(0,${height})`)
+                .call(d3.axisBottom(x).ticks(5));
+            
+            // Add X axis label
+            svg.append('text')
+                .attr('transform', `translate(${width/2}, ${height + margin.bottom - 10})`)
+                .style('text-anchor', 'middle')
+                .text('Duration (hours)');
+            
+            // Add Y axis
+            svg.append('g')
+                .attr('class', 'axis y-axis')
+                .call(d3.axisLeft(y));
+            
+            // Create tooltip
+            const tooltip = d3.select('body')
+                .append('div')
+                .attr('class', 'tooltip')
+                .style('opacity', 0);
+            
+            // Add bars
+            svg.selectAll('.bar')
+                .data(topData)
+                .enter()
+                .append('rect')
+                .attr('class', 'bar')
+                .attr('x', 0)
+                .attr('y', d => y(d.id.toString()))
+                .attr('width', d => x(d.duration))
+                .attr('height', y.bandwidth())
+                .attr('fill', '#79589F') // Different color for duration chart
+                .on('mouseover', function(event, d) {
+                    tooltip.transition()
+                        .duration(200)
+                        .style('opacity', .9);
+                    tooltip.html(`
+                        <strong>Incident #${d.id}</strong><br>
+                        ${d.title}<br>
+                        Date: ${d3.timeFormat('%b %d, %Y')(d.date)}<br>
+                        Duration: ${d.duration.toFixed(2)} hours
+                    `)
+                    .style('left', (event.pageX + 10) + 'px')
+                    .style('top', (event.pageY - 28) + 'px');
+                })
+                .on('mouseout', function() {
+                    tooltip.transition()
+                        .duration(500)
+                        .style('opacity', 0);
+                });
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,53 @@
+name: Publish Visualization
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'incidents.json'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: ".node-version"
+          cache: yarn
+      
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v3
+      
+      - name: Build visualization site
+        run: |
+          mkdir -p _site
+          cp visualization.html _site/index.html
+          cp incidents.json _site/incidents.json
+          echo "Visualization site built successfully"
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: '_site'
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
