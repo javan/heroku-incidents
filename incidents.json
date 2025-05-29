@@ -1,5 +1,12 @@
 [
   {
+    "id": 2819,
+    "url": "https://status.heroku.com/incidents/2819",
+    "date": "2025-05-28T17:50:00.000Z",
+    "title": "Investigating an Issue with Managed Inference and Agents",
+    "downtime": []
+  },
+  {
     "id": 2818,
     "url": "https://status.heroku.com/incidents/2818",
     "date": "2025-05-12T21:53:00.000Z",
