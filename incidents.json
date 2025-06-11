@@ -1,5 +1,18 @@
 [
   {
+    "id": 2822,
+    "url": "https://status.heroku.com/incidents/2822",
+    "date": "2025-06-10T08:04:00.000Z",
+    "title": "Investigating an issue with access to Heroku services",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "red",
+        "minutes": 944
+      }
+    ]
+  },
+  {
     "id": 2819,
     "url": "https://status.heroku.com/incidents/2819",
     "date": "2025-05-28T17:50:00.000Z",
