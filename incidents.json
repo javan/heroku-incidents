@@ -1,5 +1,23 @@
 [
   {
+    "id": 2855,
+    "url": "https://status.heroku.com/incidents/2855",
+    "date": "2025-06-18T16:27:00.000Z",
+    "title": "Investigating issues with dyno formations and autoscaling",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 48
+      },
+      {
+        "system": "Tools",
+        "severity": "yellow",
+        "minutes": 48
+      }
+    ]
+  },
+  {
     "id": 2822,
     "url": "https://status.heroku.com/incidents/2822",
     "date": "2025-06-10T08:04:00.000Z",
