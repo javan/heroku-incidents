@@ -36,7 +36,14 @@ const formatDowntime = (minutes) => {
 };
 
 // Update the HTML with current statistics in the title
-const updatedHTML = templateHTML.replace(
+// First, remove any existing "Last updated" paragraphs
+let updatedHTML = templateHTML.replace(
+  /<p class="subtitle" style="font-size: 0\.9rem; color: #a0aec0; margin-top: 5px;">\s*Last updated: [^<]*\s*<\/p>/g,
+  ''
+);
+
+// Then add a single new "Last updated" paragraph
+updatedHTML = updatedHTML.replace(
   '<p class="subtitle">Comprehensive view of Heroku service incidents and downtime</p>',
   `<p class="subtitle">Comprehensive view of Heroku service incidents and downtime</p>
   <p class="subtitle" style="font-size: 0.9rem; color: #a0aec0; margin-top: 5px;">

@@ -282,9 +282,9 @@
   <p class="subtitle" style="font-size: 0.9rem; color: #a0aec0; margin-top: 5px;">
     Last updated: Thursday, July 10, 2025
   </p>
-            <p class="subtitle" style="font-size: 0.9rem; color: #a0aec0; margin-top: 5px;">
-                Last updated: Thursday, July 10, 2025
-            </p>
+  
+  
+            
             
             <div class="stats" id="stats">
                 <div class="stat-item">
@@ -356,7 +356,7 @@
                             return Math.max(max, severityScore);
                         }, 0) : 0
                     }))
-                    .filter(incident => incident.date.getFullYear() >= 2020)
+
                     .sort((a, b) => b.date - a.date); // Sort by date descending
 
                 initializeFilters();
