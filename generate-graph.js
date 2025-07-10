@@ -32,9 +32,9 @@ const maxDate = new Date(Math.max(...processedData.map(d => d.date)));
 const allDowntimes = processedData.map(d => d.totalDowntime).filter(d => d > 0).sort((a, b) => a - b);
 const maxDowntime = Math.max(...allDowntimes);
 
-// Cap the scale at 95th percentile to handle outliers better
-const percentile95Index = Math.floor(allDowntimes.length * 0.95);
-const maxDisplayDowntime = allDowntimes[percentile95Index] || maxDowntime;
+// Cap the scale at 99th percentile to handle outliers better
+const percentile99Index = Math.floor(allDowntimes.length * 0.99);
+const maxDisplayDowntime = allDowntimes[percentile99Index] || maxDowntime;
 
 const xScale = (date) => padding + ((date - minDate) / (maxDate - minDate)) * graphWidth;
 const yScale = (downtime) => {
@@ -164,8 +164,8 @@ const warningIncidents = processedData.filter(i => i.maxSeverity === 2).length;
 console.log(`Generated incidents.svg with ${totalIncidents} incidents`);
 console.log(`Date range: ${minDate.toLocaleDateString()} to ${maxDate.toLocaleDateString()}`);
 console.log(`Max downtime: ${maxDowntime} minutes (${formatDowntime(maxDowntime)})`);
-console.log(`Display capped at: ${maxDisplayDowntime} minutes (${formatDowntime(maxDisplayDowntime)}) - 95th percentile`);
-console.log(`Outliers (>95th percentile): ${outliersCount} incidents`);
+console.log(`Display capped at: ${maxDisplayDowntime} minutes (${formatDowntime(maxDisplayDowntime)}) - 99th percentile`);
+console.log(`Outliers (>99th percentile): ${outliersCount} incidents`);
 console.log(`Incidents with downtime: ${incidentsWithDowntime}/${totalIncidents}`);
 console.log(`Average downtime: ${Math.round(avgDowntime)} minutes`);
 console.log(`Critical incidents: ${criticalIncidents}, Warning incidents: ${warningIncidents}`);
