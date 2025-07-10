@@ -6,7 +6,7 @@ on:
     branches: [ main ]
     paths:
       - 'incidents.json'
-      - 'timeline.html'
+      - 'index.html'
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages

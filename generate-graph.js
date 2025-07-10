@@ -29,10 +29,19 @@ const graphHeight = height - 2 * padding;
 // Calculate scales
 const minDate = new Date(Math.min(...processedData.map(d => d.date)));
 const maxDate = new Date(Math.max(...processedData.map(d => d.date)));
-const maxDowntime = Math.max(...processedData.map(d => d.totalDowntime));
+const allDowntimes = processedData.map(d => d.totalDowntime).filter(d => d > 0).sort((a, b) => a - b);
+const maxDowntime = Math.max(...allDowntimes);
+
+// Cap the scale at 95th percentile to handle outliers better
+const percentile95Index = Math.floor(allDowntimes.length * 0.95);
+const maxDisplayDowntime = allDowntimes[percentile95Index] || maxDowntime;
 
 const xScale = (date) => padding + ((date - minDate) / (maxDate - minDate)) * graphWidth;
-const yScale = (downtime) => height - padding - (downtime / maxDowntime) * graphHeight;
+const yScale = (downtime) => {
+  // Cap the display value but show actual value in tooltip
+  const cappedDowntime = Math.min(downtime, maxDisplayDowntime);
+  return height - padding - (cappedDowntime / maxDisplayDowntime) * graphHeight;
+};
 
 // Color mapping
 const getSeverityColor = (severity) => {
@@ -78,7 +87,7 @@ let svg = `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/200
 // Add horizontal grid lines
 for (let i = 0; i <= 5; i++) {
   const y = height - padding - (i / 5) * graphHeight;
-  const value = Math.round((i / 5) * maxDowntime);
+  const value = Math.round((i / 5) * maxDisplayDowntime);
   svg += `
   <line x1="${padding}" y1="${y}" x2="${width - padding}" y2="${y}" class="grid-line"/>
   <text x="${padding - 10}" y="${y + 4}" class="axis-text" text-anchor="end">${formatDowntime(value)}</text>`;
@@ -105,26 +114,34 @@ svg += `
   <line x1="${padding}" y1="${padding}" x2="${padding}" y2="${height - padding}" class="axis-line"/>`;
 
 // Add incident points
+const outliersCount = processedData.filter(i => i.totalDowntime > maxDisplayDowntime).length;
 processedData.forEach(incident => {
   const x = xScale(incident.date);
   const y = yScale(incident.totalDowntime);
   const color = getSeverityColor(incident.maxSeverity);
   const radius = Math.max(3, Math.min(8, Math.sqrt(incident.totalDowntime / 10)));
+  const isOutlier = incident.totalDowntime > maxDisplayDowntime;
   
   // Escape HTML entities in title for SVG
   const escapedTitle = incident.title.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   
   svg += `
-  <circle cx="${x}" cy="${y}" r="${radius}" fill="${color}" class="incident-point">
-    <title>${incident.date.toLocaleDateString()}: ${escapedTitle} (${formatDowntime(incident.totalDowntime)} downtime)</title>
+  <circle cx="${x}" cy="${y}" r="${radius}" fill="${color}" class="incident-point" ${isOutlier ? 'stroke="#000" stroke-width="2"' : ''}>
+    <title>${incident.date.toLocaleDateString()}: ${escapedTitle} (${formatDowntime(incident.totalDowntime)} downtime)${isOutlier ? ' - OUTLIER' : ''}</title>
   </circle>`;
+  
+  // Add outlier indicator
+  if (isOutlier) {
+    svg += `
+    <text x="${x}" y="${y - radius - 5}" class="axis-text" text-anchor="middle" font-size="10" fill="#000">⚠</text>`;
+  }
 });
 
 // Add legend
 svg += `
   <!-- Legend -->
   <g transform="translate(${width - 150}, 60)">
-    <rect x="-10" y="-10" width="140" height="80" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="-10" y="-10" width="140" height="100" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
     <text x="0" y="0" class="axis-text" font-weight="bold">Severity</text>
     <circle cx="10" cy="15" r="4" fill="#dc2626"/>
     <text x="20" y="19" class="axis-text">Critical (Red)</text>
@@ -132,6 +149,7 @@ svg += `
     <text x="20" y="39" class="axis-text">Warning (Yellow)</text>
     <circle cx="10" cy="55" r="4" fill="#6b7280"/>
     <text x="20" y="59" class="axis-text">Other/No Impact</text>
+    ${outliersCount > 0 ? `<text x="0" y="75" class="axis-text" font-size="10">⚠ ${outliersCount} outliers capped</text>` : ''}
   </g>
   
 </svg>`;
@@ -148,7 +166,9 @@ const warningIncidents = processedData.filter(i => i.maxSeverity === 2).length;
 
 console.log(`Generated incidents.svg with ${totalIncidents} incidents`);
 console.log(`Date range: ${minDate.toLocaleDateString()} to ${maxDate.toLocaleDateString()}`);
-console.log(`Max downtime: ${maxDowntime} minutes`);
+console.log(`Max downtime: ${maxDowntime} minutes (${formatDowntime(maxDowntime)})`);
+console.log(`Display capped at: ${maxDisplayDowntime} minutes (${formatDowntime(maxDisplayDowntime)}) - 95th percentile`);
+console.log(`Outliers (>95th percentile): ${outliersCount} incidents`);
 console.log(`Incidents with downtime: ${incidentsWithDowntime}/${totalIncidents}`);
 console.log(`Average downtime: ${Math.round(avgDowntime)} minutes`);
 console.log(`Critical incidents: ${criticalIncidents}, Warning incidents: ${warningIncidents}`);

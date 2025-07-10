@@ -1,7 +1,7 @@
 import { readFile, writeFile } from 'fs/promises';
 
 // Read the template HTML file
-const templateHTML = await readFile('timeline.html', 'utf-8');
+const templateHTML = await readFile('index.html', 'utf-8');
 
 // Read and process incidents data
 const incidentsData = JSON.parse(await readFile('incidents.json', 'utf-8'));
@@ -51,8 +51,8 @@ const updatedHTML = templateHTML.replace(
 );
 
 // Write the updated HTML
-await writeFile('timeline.html', updatedHTML);
+await writeFile('index.html', updatedHTML);
 
-console.log(`Updated timeline.html with ${totalIncidents} incidents`);
+console.log(`Updated index.html with ${totalIncidents} incidents`);
 console.log(`Critical: ${criticalIncidents}, Warning: ${warningIncidents}`);
 console.log(`Average downtime: ${formatDowntime(avgDowntime)}`);

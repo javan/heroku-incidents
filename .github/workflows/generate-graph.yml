@@ -33,7 +33,7 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'Update incident graph and timeline'
-          file_pattern: 'incidents.svg README.md timeline.html index.html'
+          file_pattern: 'incidents.svg README.md index.html'
           skip_dirty_check: false
       
       - name: Trigger Pages deployment
