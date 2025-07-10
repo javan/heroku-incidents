@@ -18,6 +18,6 @@
 
 ### Interactive Timeline
 
-For a more detailed and interactive view, check out the [Interactive Timeline](https://javan.github.io/heroku-incidents/timeline.html) which includes filtering, search, and detailed incident information.
+For a more detailed and interactive view, check out the [Interactive Timeline](https://javan.github.io/heroku-incidents/) which includes filtering, search, and detailed incident information.
 
-A structured JSON representation of [status.heroku.com/incidents](https://status.heroku.com/incidents), updated daily. I planned to make ~~pretty~~ graphs with this data ([`incidents.json`](incidents.json)) to see if any trends emerge, but ran out of steam. Feel free to!
+A structured JSON representation of [status.heroku.com/incidents](https://status.heroku.com/incidents), updated daily.
