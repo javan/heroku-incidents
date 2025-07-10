@@ -1,6 +1,7 @@
+---
 name: Generate Incident Graph
 
-on:
+'on':
   push:
     paths:
       - 'incidents.json'
@@ -9,23 +10,23 @@ on:
 jobs:
   generate-graph:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v3
-      
+
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
           cache: yarn
-          
+
       - run: yarn install --frozen-lockfile --ignore-scripts
-      
+
       - name: Generate SVG graph
         run: node generate-graph.js
-        
+
       - name: Update README with SVG
         run: node update-readme.js
-        
+
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'Update incident graph'
