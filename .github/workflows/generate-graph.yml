@@ -1,0 +1,46 @@
+---
+name: Generate Incident Graph
+
+'on':
+  push:
+    paths:
+      - 'incidents.json'
+  workflow_dispatch:
+
+jobs:
+  generate-graph:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: yarn
+
+      - run: yarn install --frozen-lockfile --ignore-scripts
+
+      - name: Generate SVG graph
+        run: node generate-graph.js
+
+      - name: Generate interactive timeline
+        run: node generate-timeline.js
+
+      - name: Update README with SVG
+        run: node update-readme.js
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Update incident graph and timeline'
+          file_pattern: 'incidents.svg README.md index.html'
+          skip_dirty_check: false
+      
+      - name: Trigger Pages deployment
+        if: github.ref == 'refs/heads/main'
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy-pages.yml/dispatches \
+            -d '{"ref":"main"}'
