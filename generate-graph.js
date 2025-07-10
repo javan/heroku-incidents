@@ -79,9 +79,6 @@ let svg = `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/200
   <!-- Background -->
   <rect width="${width}" height="${height}" fill="#ffffff"/>
   
-  <!-- Title -->
-  <text x="${width/2}" y="30" class="title" text-anchor="middle">Heroku Incidents Timeline (2020-2025)</text>
-  
   <!-- Grid lines -->`;
 
 // Add horizontal grid lines

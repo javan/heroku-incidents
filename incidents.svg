@@ -13,9 +13,6 @@
   <!-- Background -->
   <rect width="800" height="400" fill="#ffffff"/>
   
-  <!-- Title -->
-  <text x="400" y="30" class="title" text-anchor="middle">Heroku Incidents Timeline (2020-2025)</text>
-  
   <!-- Grid lines -->
   <line x1="60" y1="340" x2="740" y2="340" class="grid-line"/>
   <text x="50" y="344" class="axis-text" text-anchor="end">0m</text>
