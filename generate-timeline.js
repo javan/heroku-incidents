@@ -16,8 +16,7 @@ const processedData = incidentsData
       const severityScore = d.severity === 'red' ? 3 : d.severity === 'yellow' ? 2 : 1;
       return Math.max(max, severityScore);
     }, 0) : 0
-  }))
-  .filter(incident => incident.date.getFullYear() >= 2020);
+  }));
 
 // Calculate statistics
 const totalIncidents = processedData.length;

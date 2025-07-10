@@ -16,7 +16,7 @@ const processedData = incidentsData
       return Math.max(max, severityScore);
     }, 0) : 0
   }))
-  .filter(incident => incident.date.getFullYear() >= 2020) // Focus on recent years
+
   .sort((a, b) => a.date - b.date);
 
 // Generate SVG
