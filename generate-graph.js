@@ -44,6 +44,16 @@ const getSeverityColor = (severity) => {
   }
 };
 
+// Helper function to format downtime
+const formatDowntime = (minutes) => {
+  if (minutes >= 60) {
+    const hours = Math.floor(minutes / 60);
+    const mins = minutes % 60;
+    return mins > 0 ? `${hours}h${mins}m` : `${hours}h`;
+  }
+  return `${minutes}m`;
+};
+
 // Generate SVG content
 let svg = `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -71,7 +81,7 @@ for (let i = 0; i <= 5; i++) {
   const value = Math.round((i / 5) * maxDowntime);
   svg += `
   <line x1="${padding}" y1="${y}" x2="${width - padding}" y2="${y}" class="grid-line"/>
-  <text x="${padding - 10}" y="${y + 4}" class="axis-text" text-anchor="end">${value}m</text>`;
+  <text x="${padding - 10}" y="${y + 4}" class="axis-text" text-anchor="end">${formatDowntime(value)}</text>`;
 }
 
 // Add vertical grid lines (years)
@@ -92,13 +102,7 @@ svg += `
   <!-- X-axis -->
   <line x1="${padding}" y1="${height - padding}" x2="${width - padding}" y2="${height - padding}" class="axis-line"/>
   <!-- Y-axis -->
-  <line x1="${padding}" y1="${padding}" x2="${padding}" y2="${height - padding}" class="axis-line"/>
-  
-  <!-- Y-axis label -->
-  <text x="25" y="${height/2}" class="axis-text" text-anchor="middle" transform="rotate(-90 25 ${height/2})">Downtime (minutes)</text>
-  
-  <!-- X-axis label -->
-  <text x="${width/2}" y="${height - 10}" class="axis-text" text-anchor="middle">Year</text>`;
+  <line x1="${padding}" y1="${padding}" x2="${padding}" y2="${height - padding}" class="axis-line"/>`;
 
 // Add incident points
 processedData.forEach(incident => {
@@ -112,7 +116,7 @@ processedData.forEach(incident => {
   
   svg += `
   <circle cx="${x}" cy="${y}" r="${radius}" fill="${color}" class="incident-point">
-    <title>${incident.date.toLocaleDateString()}: ${escapedTitle} (${incident.totalDowntime}m downtime)</title>
+    <title>${incident.date.toLocaleDateString()}: ${escapedTitle} (${formatDowntime(incident.totalDowntime)} downtime)</title>
   </circle>`;
 });
 

@@ -20,15 +20,15 @@
   <line x1="60" y1="340" x2="740" y2="340" class="grid-line"/>
   <text x="50" y="344" class="axis-text" text-anchor="end">0m</text>
   <line x1="60" y1="284" x2="740" y2="284" class="grid-line"/>
-  <text x="50" y="288" class="axis-text" text-anchor="end">13264m</text>
+  <text x="50" y="288" class="axis-text" text-anchor="end">221h4m</text>
   <line x1="60" y1="228" x2="740" y2="228" class="grid-line"/>
-  <text x="50" y="232" class="axis-text" text-anchor="end">26528m</text>
+  <text x="50" y="232" class="axis-text" text-anchor="end">442h8m</text>
   <line x1="60" y1="172" x2="740" y2="172" class="grid-line"/>
-  <text x="50" y="176" class="axis-text" text-anchor="end">39791m</text>
+  <text x="50" y="176" class="axis-text" text-anchor="end">663h11m</text>
   <line x1="60" y1="116" x2="740" y2="116" class="grid-line"/>
-  <text x="50" y="120" class="axis-text" text-anchor="end">53055m</text>
+  <text x="50" y="120" class="axis-text" text-anchor="end">884h15m</text>
   <line x1="60" y1="60" x2="740" y2="60" class="grid-line"/>
-  <text x="50" y="64" class="axis-text" text-anchor="end">66319m</text>
+  <text x="50" y="64" class="axis-text" text-anchor="end">1105h19m</text>
   <line x1="58.10340382263874" y1="60" x2="58.10340382263874" y2="340" class="grid-line"/>
   <text x="58.10340382263874" y="360" class="axis-text" text-anchor="middle">2020</text>
   <line x1="181.9673504541725" y1="60" x2="181.9673504541725" y2="340" class="grid-line"/>
@@ -45,12 +45,6 @@
   <line x1="60" y1="340" x2="740" y2="340" class="axis-line"/>
   <!-- Y-axis -->
   <line x1="60" y1="60" x2="60" y2="340" class="axis-line"/>
-  
-  <!-- Y-axis label -->
-  <text x="25" y="200" class="axis-text" text-anchor="middle" transform="rotate(-90 25 200)">Downtime (minutes)</text>
-  
-  <!-- X-axis label -->
-  <text x="400" y="390" class="axis-text" text-anchor="middle">Year</text>
   <circle cx="60" cy="339.83534130490506" r="3" fill="#f59e0b" class="incident-point">
     <title>1/6/2020: Incomplete Dashboard Metrics (39m downtime)</title>
   </circle>
@@ -58,52 +52,52 @@
     <title>1/7/2020: CLI Authentication Errors (25m downtime)</title>
   </circle>
   <circle cx="61.074267797610695" cy="339.0036037937846" r="4.857983120596447" fill="#f59e0b" class="incident-point">
-    <title>1/9/2020: git Push Error Messages When Deploying Over https (236m downtime)</title>
+    <title>1/9/2020: git Push Error Messages When Deploying Over https (3h56m downtime)</title>
   </circle>
   <circle cx="62.727620227317814" cy="339.8015651623215" r="3" fill="#f59e0b" class="incident-point">
     <title>1/14/2020: Platform Delays (47m downtime)</title>
   </circle>
   <circle cx="62.81434191126407" cy="339.38780741567274" r="3.8078865529319543" fill="#f59e0b" class="incident-point">
-    <title>1/14/2020: Preboot not properly delaying requests to new Dynos (145m downtime)</title>
+    <title>1/14/2020: Preboot not properly delaying requests to new Dynos (2h25m downtime)</title>
   </circle>
   <circle cx="63.20564707053377" cy="339.5989083068201" r="3.082207001484488" fill="#f59e0b" class="incident-point">
-    <title>1/16/2020: Issues in PostgreSQL client libraries in Private Space apps (95m downtime)</title>
+    <title>1/16/2020: Issues in PostgreSQL client libraries in Private Space apps (1h35m downtime)</title>
   </circle>
   <circle cx="63.334672014941624" cy="339.68757068110193" r="3" fill="#f59e0b" class="incident-point">
-    <title>1/16/2020: Platform Delays (74m downtime)</title>
+    <title>1/16/2020: Platform Delays (1h14m downtime)</title>
   </circle>
   <circle cx="63.671217953724934" cy="339.8522293761969" r="3" fill="#f59e0b" class="incident-point">
     <title>1/17/2020: Pipeline Errors (35m downtime)</title>
   </circle>
   <circle cx="63.8211595102499" cy="339.7382348949773" r="3" fill="#f59e0b" class="incident-point">
-    <title>1/17/2020: Delays in start of one-off dynos for Release Phase commands (62m downtime)</title>
+    <title>1/17/2020: Delays in start of one-off dynos for Release Phase commands (1h2m downtime)</title>
   </circle>
   <circle cx="64.5807380536491" cy="339.759344984092" r="3" fill="#f59e0b" class="incident-point">
     <title>1/20/2020: Delays in Release Phase tasks (57m downtime)</title>
   </circle>
   <circle cx="65.05970496931977" cy="339.442693647371" r="3.63318042491699" fill="#f59e0b" class="incident-point">
-    <title>1/21/2020: CLI Issues (132m downtime)</title>
+    <title>1/21/2020: CLI Issues (2h12m downtime)</title>
   </circle>
   <circle cx="65.36804873446202" cy="339.94933578612466" r="3" fill="#f59e0b" class="incident-point">
     <title>1/22/2020: Delays in Release Phase tasks (12m downtime)</title>
   </circle>
   <circle cx="65.52057549023742" cy="339.3033670592138" r="4.06201920231798" fill="#f59e0b" class="incident-point">
-    <title>1/22/2020: Errors viewing logs and log draining (165m downtime)</title>
+    <title>1/22/2020: Errors viewing logs and log draining (2h45m downtime)</title>
   </circle>
   <circle cx="65.60001161265973" cy="338.92760747297154" r="5.039841267341661" fill="#f59e0b" class="incident-point">
-    <title>1/23/2020: Increased Dyno Provisioning issues in the Sydney Private Space region (254m downtime)</title>
+    <title>1/23/2020: Increased Dyno Provisioning issues in the Sydney Private Space region (4h14m downtime)</title>
   </circle>
   <circle cx="65.68109286187779" cy="331.7586212096081" r="8" fill="#f59e0b" class="incident-point">
-    <title>1/23/2020: Errors viewing logs and log draining (1952m downtime)</title>
+    <title>1/23/2020: Errors viewing logs and log draining (32h32m downtime)</title>
   </circle>
   <circle cx="67.886972876836" cy="339.93244771483285" r="3" fill="#f59e0b" class="incident-point">
     <title>1/29/2020: We are investigating reported delays to API webhook events (16m downtime)</title>
   </circle>
   <circle cx="68.18380075440814" cy="339.45958171866283" r="3.5777087639996634" fill="#f59e0b" class="incident-point">
-    <title>1/30/2020: Dyno, Logs, and Metrics Issues (128m downtime)</title>
+    <title>1/30/2020: Dyno, Logs, and Metrics Issues (2h8m downtime)</title>
   </circle>
   <circle cx="69.62187659198851" cy="339.12182029282707" r="4.560701700396552" fill="#f59e0b" class="incident-point">
-    <title>2/4/2020: Dynos and Builds Failing - US Common Runtime (208m downtime)</title>
+    <title>2/4/2020: Dynos and Builds Failing - US Common Runtime (3h28m downtime)</title>
   </circle>
   <circle cx="71.23457088802977" cy="339.76356700191496" r="3" fill="#f59e0b" class="incident-point">
     <title>2/8/2020: Upstream Intermittent DNS Resolution Failures (56m downtime)</title>
@@ -118,10 +112,10 @@
     <title>2/14/2020: Issues with Review App creation (0m downtime)</title>
   </circle>
   <circle cx="75.56501465061447" cy="338.9107194016798" r="5.079370039680118" fill="#f59e0b" class="incident-point">
-    <title>2/21/2020: Platform Errors (258m downtime)</title>
+    <title>2/21/2020: Platform Errors (4h18m downtime)</title>
   </circle>
   <circle cx="77.33470104659096" cy="339.1640404710566" r="4.449719092257398" fill="#f59e0b" class="incident-point">
-    <title>2/26/2020: Intermittent API Errors (198m downtime)</title>
+    <title>2/26/2020: Intermittent API Errors (3h18m downtime)</title>
   </circle>
   <circle cx="77.99439689167808" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>2/28/2020: Webhooks service update on Monday, March 9th at 17:00 UTC (12:00 EST) (0m downtime)</title>
@@ -130,22 +124,22 @@
     <title>2/28/2020: Errors with app management (50m downtime)</title>
   </circle>
   <circle cx="78.1314124519509" cy="339.683348663279" r="3" fill="#f59e0b" class="incident-point">
-    <title>2/29/2020: Delays issuing automated certificates (75m downtime)</title>
+    <title>2/29/2020: Delays issuing automated certificates (1h15m downtime)</title>
   </circle>
   <circle cx="78.30791105532118" cy="339.7466789306232" r="3" fill="#f59e0b" class="incident-point">
-    <title>2/29/2020: Inaccurate Dashboard Metrics and Autoscaling (60m downtime)</title>
+    <title>2/29/2020: Inaccurate Dashboard Metrics and Autoscaling (1h downtime)</title>
   </circle>
   <circle cx="79.73964140383231" cy="339.8902275366034" r="3" fill="#f59e0b" class="incident-point">
     <title>3/4/2020: Delays in domain and certificate updates (26m downtime)</title>
   </circle>
   <circle cx="80.34081773861423" cy="338.94449554426336" r="5" fill="#dc2626" class="incident-point">
-    <title>3/6/2020: EU Dyno Errors (250m downtime)</title>
+    <title>3/6/2020: EU Dyno Errors (4h10m downtime)</title>
   </circle>
   <circle cx="81.3894685618343" cy="339.52713400383" r="3.3466401061363023" fill="#f59e0b" class="incident-point">
-    <title>3/9/2020: Webhooks delay (112m downtime)</title>
+    <title>3/9/2020: Webhooks delay (1h52m downtime)</title>
   </circle>
   <circle cx="82.08958752247361" cy="339.59468628899714" r="3.0983866769659336" fill="#f59e0b" class="incident-point">
-    <title>3/11/2020: Delays in app release (96m downtime)</title>
+    <title>3/11/2020: Delays in app release (1h36m downtime)</title>
   </circle>
   <circle cx="82.7542187479479" cy="339.91133762571815" r="3" fill="#f59e0b" class="incident-point">
     <title>3/13/2020: Data Dashboard (21m downtime)</title>
@@ -157,19 +151,19 @@
     <title>3/16/2020: US Routing Issues (31m downtime)</title>
   </circle>
   <circle cx="86.12672867919129" cy="339.5313560216529" r="3.331666249791536" fill="#f59e0b" class="incident-point">
-    <title>3/23/2020: Heroku Git Errors (111m downtime)</title>
+    <title>3/23/2020: Heroku Git Errors (1h51m downtime)</title>
   </circle>
   <circle cx="86.5831338559491" cy="339.54402207512175" r="3.286335345030997" fill="#f59e0b" class="incident-point">
-    <title>3/25/2020: Delays in Release Phase tasks (108m downtime)</title>
+    <title>3/25/2020: Delays in Release Phase tasks (1h48m downtime)</title>
   </circle>
   <circle cx="87.09899861546683" cy="339.8057871801445" r="3" fill="#f59e0b" class="incident-point">
     <title>3/26/2020: Search Results Not Displayed on Heroku Elements (46m downtime)</title>
   </circle>
   <circle cx="87.51662580346817" cy="339.64112848504953" r="3" fill="#f59e0b" class="incident-point">
-    <title>3/27/2020: Platform Issues (85m downtime)</title>
+    <title>3/27/2020: Platform Issues (1h25m downtime)</title>
   </circle>
   <circle cx="88.4630437472394" cy="337.8298828390054" r="7.1693793315739685" fill="#f59e0b" class="incident-point">
-    <title>3/30/2020: Dataclip UI Schema Load Error (514m downtime)</title>
+    <title>3/30/2020: Dataclip UI Schema Load Error (8h34m downtime)</title>
   </circle>
   <circle cx="88.50017660920012" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>3/30/2020: Node Build Failures (0m downtime)</title>
@@ -178,7 +172,7 @@
     <title>4/7/2020: Dyno management operations delayed (40m downtime)</title>
   </circle>
   <circle cx="91.29759721627957" cy="339.56935418205944" r="3.1937438845342623" fill="#f59e0b" class="incident-point">
-    <title>4/8/2020: Delays in update of SSL certificates for Heroku apps (102m downtime)</title>
+    <title>4/8/2020: Delays in update of SSL certificates for Heroku apps (1h42m downtime)</title>
   </circle>
   <circle cx="93.15753056790746" cy="339.7931211266756" r="3" fill="#f59e0b" class="incident-point">
     <title>4/13/2020: Manual SSL Cert Management (49m downtime)</title>
@@ -196,25 +190,25 @@
     <title>4/20/2020: Private Spaces Service Update on Friday April 24 at 16:00 UTC (0m downtime)</title>
   </circle>
   <circle cx="96.28068628054112" cy="339.2358147740467" r="4.254409477236529" fill="#dc2626" class="incident-point">
-    <title>4/22/2020: API Issues (181m downtime)</title>
+    <title>4/22/2020: API Issues (3h1m downtime)</title>
   </circle>
   <circle cx="98.59608473647211" cy="339.6453505028725" r="3" fill="#f59e0b" class="incident-point">
-    <title>4/29/2020: Heroku Marketing Website (84m downtime)</title>
+    <title>4/29/2020: Heroku Marketing Website (1h24m downtime)</title>
   </circle>
   <circle cx="100.66259901002076" cy="339.8733394653116" r="3" fill="#f59e0b" class="incident-point">
     <title>5/5/2020: Heroku Connect Dashboard Issues (30m downtime)</title>
   </circle>
   <circle cx="100.70396219802765" cy="339.29914504139083" r="4.0743097574926725" fill="#f59e0b" class="incident-point">
-    <title>5/5/2020: Delays booting Dynos (166m downtime)</title>
+    <title>5/5/2020: Delays booting Dynos (2h46m downtime)</title>
   </circle>
   <circle cx="101.51359959963973" cy="339.6200183959348" r="3" fill="#f59e0b" class="incident-point">
-    <title>5/8/2020: Heroku Exec was unavailable between 0630 UTC and 0800 UTC (90m downtime)</title>
+    <title>5/8/2020: Heroku Exec was unavailable between 0630 UTC and 0800 UTC (1h30m downtime)</title>
   </circle>
   <circle cx="101.65155523236724" cy="339.15981845323364" r="4.460941604639093" fill="#f59e0b" class="incident-point">
-    <title>5/8/2020: Heroku Exec was unavailable between 16:17 UTC and 17:37 UTC (199m downtime)</title>
+    <title>5/8/2020: Heroku Exec was unavailable between 16:17 UTC and 17:37 UTC (3h19m downtime)</title>
   </circle>
   <circle cx="101.6962086739656" cy="339.7086807702167" r="3" fill="#f59e0b" class="incident-point">
-    <title>5/8/2020: Dataclips Issues (69m downtime)</title>
+    <title>5/8/2020: Dataclips Issues (1h9m downtime)</title>
   </circle>
   <circle cx="102.65461254153428" cy="339.87756148313457" r="3" fill="#f59e0b" class="incident-point">
     <title>5/11/2020: Redis Provisioning Failures (29m downtime)</title>
@@ -229,13 +223,13 @@
     <title>5/24/2020: Email Notifications for Team Admins (49m downtime)</title>
   </circle>
   <circle cx="108.14487069510754" cy="339.14715239976476" r="4.494441010848846" fill="#f59e0b" class="incident-point">
-    <title>5/27/2020: Delayed Builds (202m downtime)</title>
+    <title>5/27/2020: Delayed Builds (3h22m downtime)</title>
   </circle>
   <circle cx="108.81185210171861" cy="339.81423121579036" r="3" fill="#f59e0b" class="incident-point">
     <title>5/29/2020: Increased Platform Error Rate (44m downtime)</title>
   </circle>
   <circle cx="109.07225217167107" cy="338.9487175620863" r="4.9899899799498595" fill="#f59e0b" class="incident-point">
-    <title>5/30/2020: Application crashes (249m downtime)</title>
+    <title>5/30/2020: Application crashes (4h9m downtime)</title>
   </circle>
   <circle cx="110.1018665276834" cy="339.8311192870821" r="3" fill="#f59e0b" class="incident-point">
     <title>6/2/2020: DNS Issues (40m downtime)</title>
@@ -244,7 +238,7 @@
     <title>6/3/2020: Heroku Connect Service Update on Monday, June 15th at 20:00 UTC (4:00 PM EDT) (0m downtime)</title>
   </circle>
   <circle cx="110.45979911481119" cy="339.43424961172514" r="3.6606010435446255" fill="#f59e0b" class="incident-point">
-    <title>6/3/2020: Missing Logs in Some Applications (134m downtime)</title>
+    <title>6/3/2020: Missing Logs in Some Applications (2h14m downtime)</title>
   </circle>
   <circle cx="110.54229047271129" cy="339.9662238574164" r="3" fill="#f59e0b" class="incident-point">
     <title>6/3/2020: Heroku Connect Heroku External Objects request timeouts (8m downtime)</title>
@@ -256,34 +250,34 @@
     <title>6/8/2020: EU Logging and Metric Availability Issues (0m downtime)</title>
   </circle>
   <circle cx="112.66732425656512" cy="339.36247530873504" r="3.8858718455450894" fill="#f59e0b" class="incident-point">
-    <title>6/10/2020: Heroku Data services commands failing for some customers (151m downtime)</title>
+    <title>6/10/2020: Heroku Data services commands failing for some customers (2h31m downtime)</title>
   </circle>
   <circle cx="113.36955838022752" cy="338.95293957990924" r="4.979959839195493" fill="#f59e0b" class="incident-point">
-    <title>6/12/2020: Errors connecting to web dynos on new apps (248m downtime)</title>
+    <title>6/12/2020: Errors connecting to web dynos on new apps (4h8m downtime)</title>
   </circle>
   <circle cx="113.3813092859113" cy="338.64895429665705" r="5.656854249492381" fill="#f59e0b" class="incident-point">
-    <title>6/12/2020: Private Space creation delays (320m downtime)</title>
+    <title>6/12/2020: Private Space creation delays (5h20m downtime)</title>
   </circle>
   <circle cx="113.53595120470976" cy="339.8733394653116" r="3" fill="#f59e0b" class="incident-point">
     <title>6/12/2020: Issues with SSL connections on herokuapp.com domains (30m downtime)</title>
   </circle>
   <circle cx="114.47978394923055" cy="339.7086807702167" r="3" fill="#f59e0b" class="incident-point">
-    <title>6/15/2020: Data Service Administration Latency (69m downtime)</title>
+    <title>6/15/2020: Data Service Administration Latency (1h9m downtime)</title>
   </circle>
   <circle cx="115.19353396046304" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>6/17/2020: Log Loss in Private Spaces (0m downtime)</title>
   </circle>
   <circle cx="117.88895670620732" cy="339.6115743602889" r="3.03315017762062" fill="#f59e0b" class="incident-point">
-    <title>6/25/2020: Data Dashboard Errors (92m downtime)</title>
+    <title>6/25/2020: Data Dashboard Errors (1h32m downtime)</title>
   </circle>
   <circle cx="119.29930040637397" cy="339.6749046276331" r="3" fill="#f59e0b" class="incident-point">
-    <title>6/29/2020: Heroku API, Dyno, Build, and Logging Issues (77m downtime)</title>
+    <title>6/29/2020: Heroku API, Dyno, Build, and Logging Issues (1h17m downtime)</title>
   </circle>
   <circle cx="119.53948891855032" cy="325.0202807641852" r="8" fill="#f59e0b" class="incident-point">
-    <title>6/30/2020: Issues firing Deploy Hooks (3548m downtime)</title>
+    <title>6/30/2020: Issues firing Deploy Hooks (59h8m downtime)</title>
   </circle>
   <circle cx="119.68684527582487" cy="338.99938177596164" r="4.868264577855234" fill="#f59e0b" class="incident-point">
-    <title>6/30/2020: Issues with pg Heroku CLI commands (237m downtime)</title>
+    <title>6/30/2020: Issues with pg Heroku CLI commands (3h57m downtime)</title>
   </circle>
   <circle cx="124.28003928949877" cy="339.77623305538384" r="3" fill="#f59e0b" class="incident-point">
     <title>7/14/2020: [EU] Data Services Unavailable (53m downtime)</title>
@@ -298,13 +292,13 @@
     <title>7/23/2020: Dashboard Login Errors (38m downtime)</title>
   </circle>
   <circle cx="128.66970761672968" cy="339.050045989837" r="4.743416490252569" fill="#f59e0b" class="incident-point">
-    <title>7/27/2020: Dashboard login errors (225m downtime)</title>
+    <title>7/27/2020: Dashboard login errors (3h45m downtime)</title>
   </circle>
   <circle cx="128.757134355017" cy="339.83534130490506" r="3" fill="#f59e0b" class="incident-point">
     <title>7/27/2020: Email Link Errors (39m downtime)</title>
   </circle>
   <circle cx="128.96489036750611" cy="339.446915665194" r="3.6193922141707713" fill="#dc2626" class="incident-point">
-    <title>7/28/2020: Platform Issues (131m downtime)</title>
+    <title>7/28/2020: Platform Issues (2h11m downtime)</title>
   </circle>
   <circle cx="131.454907281898" cy="339.81423121579036" r="3" fill="#f59e0b" class="incident-point">
     <title>8/4/2020: Private Space Maintenance Issues (44m downtime)</title>
@@ -313,61 +307,61 @@
     <title>8/5/2020: Issues with Heroku Authorization Services (29m downtime)</title>
   </circle>
   <circle cx="133.66971798517588" cy="339.5018018968923" r="3.4351128074635335" fill="#dc2626" class="incident-point">
-    <title>8/11/2020: Dyno management issues (118m downtime)</title>
+    <title>8/11/2020: Dyno management issues (1h58m downtime)</title>
   </circle>
   <circle cx="133.8614927659351" cy="339.8522293761969" r="3" fill="#dc2626" class="incident-point">
     <title>8/11/2020: Issues with Heroku Authorization Services (35m downtime)</title>
   </circle>
   <circle cx="134.1837025997842" cy="338.7418386887619" r="5.458937625582473" fill="#dc2626" class="incident-point">
-    <title>8/12/2020: Issues with Heroku Authorization Services (298m downtime)</title>
+    <title>8/12/2020: Issues with Heroku Authorization Services (4h58m downtime)</title>
   </circle>
   <circle cx="134.51719330308973" cy="339.6200183959348" r="3" fill="#dc2626" class="incident-point">
-    <title>8/13/2020: Issues with Heroku Authorization Services (90m downtime)</title>
+    <title>8/13/2020: Issues with Heroku Authorization Services (1h30m downtime)</title>
   </circle>
   <circle cx="136.48241476964424" cy="339.65379453851835" r="3" fill="#f59e0b" class="incident-point">
-    <title>8/19/2020: Email Spam (82m downtime)</title>
+    <title>8/19/2020: Email Spam (1h22m downtime)</title>
   </circle>
   <circle cx="138.9026313042745" cy="338.3280809421131" r="6.29285308902091" fill="#f59e0b" class="incident-point">
-    <title>8/26/2020: Routing Issues (396m downtime)</title>
+    <title>8/26/2020: Routing Issues (6h36m downtime)</title>
   </circle>
   <circle cx="138.94516958284976" cy="339.12604231065006" r="4.54972526643093" fill="#f59e0b" class="incident-point">
-    <title>8/26/2020: Email Notifications not Delivered to Some Application Admins (207m downtime)</title>
+    <title>8/26/2020: Email Notifications not Delivered to Some Application Admins (3h27m downtime)</title>
   </circle>
   <circle cx="139.56373725804366" cy="320.76448679865496" r="8" fill="#f59e0b" class="incident-point">
-    <title>8/28/2020: Chatops Failures (4556m downtime)</title>
+    <title>8/28/2020: Chatops Failures (75h56m downtime)</title>
   </circle>
   <circle cx="140.63259963903982" cy="339.4215835582563" r="3.7013511046643495" fill="#f59e0b" class="incident-point">
-    <title>8/31/2020: Intermittent H99 Errors (137m downtime)</title>
+    <title>8/31/2020: Intermittent H99 Errors (2h17m downtime)</title>
   </circle>
   <circle cx="140.94188347663678" cy="339.6580165563413" r="3" fill="#f59e0b" class="incident-point">
-    <title>9/1/2020: SSL-related errors (81m downtime)</title>
+    <title>9/1/2020: SSL-related errors (1h21m downtime)</title>
   </circle>
   <circle cx="141.5019316415255" cy="339.76778901973796" r="3" fill="#f59e0b" class="incident-point">
     <title>9/3/2020: Heroku GIT push Errors (55m downtime)</title>
   </circle>
   <circle cx="141.9919444085389" cy="338.63628824318823" r="5.683308895353129" fill="#dc2626" class="incident-point">
-    <title>9/4/2020: Issues creating new applications, log drains or tail sessions. (323m downtime)</title>
+    <title>9/4/2020: Issues creating new applications, log drains or tail sessions. (5h23m downtime)</title>
   </circle>
   <circle cx="145.69394973515531" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>9/15/2020: [Virginia] Heroku Connect maintenance on Wednesday, September 23 at 18:30 UTC (2:30 PM EDT) (0m downtime)</title>
   </circle>
   <circle cx="148.73766932536665" cy="339.1049322215353" r="4.604345773288535" fill="#f59e0b" class="incident-point">
-    <title>9/24/2020: Platform Issues (212m downtime)</title>
+    <title>9/24/2020: Platform Issues (3h32m downtime)</title>
   </circle>
   <circle cx="149.84460464077827" cy="338.9613836155551" r="4.959838707054898" fill="#f59e0b" class="incident-point">
-    <title>9/28/2020: Creating Private Spaces (246m downtime)</title>
+    <title>9/28/2020: Creating Private Spaces (4h6m downtime)</title>
   </circle>
   <circle cx="153.1273376525976" cy="339.759344984092" r="3" fill="#dc2626" class="incident-point">
     <title>10/7/2020: Issues with SSL connections on herokuapp.com domains (57m downtime)</title>
   </circle>
   <circle cx="153.40606913541677" cy="339.69601471674787" r="3" fill="#f59e0b" class="incident-point">
-    <title>10/8/2020: Issues With Dyno Scaling Operations and Builds (72m downtime)</title>
+    <title>10/8/2020: Issues With Dyno Scaling Operations and Builds (1h12m downtime)</title>
   </circle>
   <circle cx="153.74402518288213" cy="338.45474147680153" r="6.04979338490167" fill="#dc2626" class="incident-point">
-    <title>10/9/2020: Issues with Heroku Connect, Private Spaces, and Builds (366m downtime)</title>
+    <title>10/9/2020: Issues with Heroku Connect, Private Spaces, and Builds (6h6m downtime)</title>
   </circle>
   <circle cx="155.86271347766672" cy="339.7002367345708" r="3" fill="#f59e0b" class="incident-point">
-    <title>10/15/2020: Errors from Heroku Connect External Objects (71m downtime)</title>
+    <title>10/15/2020: Errors from Heroku Connect External Objects (1h11m downtime)</title>
   </circle>
   <circle cx="156.17176229715" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>10/16/2020: Cedar-14 Build Brownout on Monday, October 19 at 17:00-21:00 UTC (13:00-17:00 EDT) (0m downtime)</title>
@@ -394,28 +388,28 @@
     <title>11/16/2020: Potential Issues Affecting Booting Dynos (56m downtime)</title>
   </circle>
   <circle cx="166.97201971110746" cy="339.15559643541064" r="4.47213595499958" fill="#f59e0b" class="incident-point">
-    <title>11/17/2020: Issues in provisioning Heroku Postgres (200m downtime)</title>
+    <title>11/17/2020: Issues in provisioning Heroku Postgres (3h20m downtime)</title>
   </circle>
   <circle cx="168.33606484288003" cy="339.8311192870821" r="3" fill="#f59e0b" class="incident-point">
     <title>11/21/2020: Potential Issues Affecting creation of new apps, drains or tail sessions (40m downtime)</title>
   </circle>
   <circle cx="169.66579733005597" cy="332.3708137939354" r="8" fill="#f59e0b" class="incident-point">
-    <title>11/25/2020: Issues with starting new dynos (1807m downtime)</title>
+    <title>11/25/2020: Issues with starting new dynos (30h7m downtime)</title>
   </circle>
   <circle cx="174.52009646802338" cy="339.71712480586257" r="3" fill="#f59e0b" class="incident-point">
-    <title>12/9/2020: Issues adding collaborators to review apps (67m downtime)</title>
+    <title>12/9/2020: Issues adding collaborators to review apps (1h7m downtime)</title>
   </circle>
   <circle cx="174.66721780718422" cy="336.8545967219047" r="8" fill="#f59e0b" class="incident-point">
-    <title>12/10/2020: Heroku Connect Sync Issue (745m downtime)</title>
+    <title>12/10/2020: Heroku Connect Sync Issue (12h25m downtime)</title>
   </circle>
   <circle cx="176.524330941448" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>12/15/2020: One-off Dyno Service Update on Tuesday, December 15 at 22:00 UTC (17:00 EST) (0m downtime)</title>
   </circle>
   <circle cx="176.99812745861783" cy="339.4384716295481" r="3.646916505762094" fill="#f59e0b" class="incident-point">
-    <title>12/17/2020: Upstream Intermittent DNS Resolution Failures (133m downtime)</title>
+    <title>12/17/2020: Upstream Intermittent DNS Resolution Failures (2h13m downtime)</title>
   </circle>
   <circle cx="177.22444990208731" cy="339.67068260981017" r="3" fill="#f59e0b" class="incident-point">
-    <title>12/17/2020: Upstream Intermittent DNS Resolution Failures (78m downtime)</title>
+    <title>12/17/2020: Upstream Intermittent DNS Resolution Failures (1h18m downtime)</title>
   </circle>
   <circle cx="178.8098820969422" cy="339.9366697326558" r="3" fill="#f59e0b" class="incident-point">
     <title>12/22/2020: Issues with Dyno Services (15m downtime)</title>
@@ -427,109 +421,109 @@
     <title>1/7/2021: Dyno Creation/Restarts/Scaling (46m downtime)</title>
   </circle>
   <circle cx="184.51682695132428" cy="339.70445875239375" r="3" fill="#f59e0b" class="incident-point">
-    <title>1/8/2021: Dyno Creation/Restarts/Scaling (70m downtime)</title>
+    <title>1/8/2021: Dyno Creation/Restarts/Scaling (1h10m downtime)</title>
   </circle>
   <circle cx="193.4174329524427" cy="332.3750358117583" r="8" fill="#f59e0b" class="incident-point">
-    <title>2/3/2021: Private Space apps serving an unexpected certificate (1806m downtime)</title>
+    <title>2/3/2021: Private Space apps serving an unexpected certificate (30h6m downtime)</title>
   </circle>
   <circle cx="193.88887928847575" cy="337.80455073206775" r="7.211102550927978" fill="#f59e0b" class="incident-point">
-    <title>2/5/2021: Heroku Connect Sync Issues (520m downtime)</title>
+    <title>2/5/2021: Heroku Connect Sync Issues (8h40m downtime)</title>
   </circle>
   <circle cx="195.39252517977158" cy="339.3118110948597" r="4.03732584763727" fill="#dc2626" class="incident-point">
-    <title>2/9/2021: API Issues (163m downtime)</title>
+    <title>2/9/2021: API Issues (2h43m downtime)</title>
   </circle>
   <circle cx="195.74105704235234" cy="339.7340128771544" r="3" fill="#f59e0b" class="incident-point">
-    <title>2/10/2021: Issues with Dyno booting, restarting, scaling (63m downtime)</title>
+    <title>2/10/2021: Issues with Dyno booting, restarting, scaling (1h3m downtime)</title>
   </circle>
   <circle cx="196.14834343335198" cy="339.7466789306232" r="3" fill="#f59e0b" class="incident-point">
-    <title>2/11/2021: Inability to access live logs (60m downtime)</title>
+    <title>2/11/2021: Inability to access live logs (1h downtime)</title>
   </circle>
   <circle cx="200.63225402416677" cy="336.2339601019316" r="8" fill="#f59e0b" class="incident-point">
-    <title>2/25/2021: Issues with Hobby tier Databases (892m downtime)</title>
+    <title>2/25/2021: Issues with Hobby tier Databases (14h52m downtime)</title>
   </circle>
   <circle cx="203.2571713358084" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>3/4/2021: Performance-L dyno provision timeouts (0m downtime)</title>
   </circle>
   <circle cx="204.1951286274873" cy="337.2134682368552" r="8" fill="#f59e0b" class="incident-point">
-    <title>3/7/2021: Possible networking problems in Sydney region (660m downtime)</title>
+    <title>3/7/2021: Possible networking problems in Sydney region (11h downtime)</title>
   </circle>
   <circle cx="204.98196927207286" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>3/10/2021: API Maintenance on Tuesday March 16 at 22:00 UTC (18:00 EDT) (0m downtime)</title>
   </circle>
   <circle cx="205.31334481235533" cy="339.7382348949773" r="3" fill="#f59e0b" class="incident-point">
-    <title>3/10/2021: DNS issues (62m downtime)</title>
+    <title>3/10/2021: DNS issues (1h2m downtime)</title>
   </circle>
   <circle cx="207.256709594338" cy="339.8733394653116" r="3" fill="#f59e0b" class="incident-point">
     <title>3/16/2021: Request Latency Issues in EU Region (30m downtime)</title>
   </circle>
   <circle cx="207.68796783293254" cy="339.4764697899546" r="3.521363372331802" fill="#f59e0b" class="incident-point">
-    <title>3/18/2021: Expired certificate is presented at sso.heroku.com (124m downtime)</title>
+    <title>3/18/2021: Expired certificate is presented at sso.heroku.com (2h4m downtime)</title>
   </circle>
   <circle cx="207.94672277608927" cy="333.6796393190488" r="8" fill="#dc2626" class="incident-point">
-    <title>3/18/2021: Issues accessing apps and dashboard (1497m downtime)</title>
+    <title>3/18/2021: Issues accessing apps and dashboard (24h57m downtime)</title>
   </circle>
   <circle cx="209.37962821516876" cy="339.89867157224927" r="3" fill="#f59e0b" class="incident-point">
     <title>3/22/2021: Delays in DNS updates for default and custom domains (24m downtime)</title>
   </circle>
   <circle cx="210.28139271734165" cy="339.40891750478744" r="3.7416573867739413" fill="#dc2626" class="incident-point">
-    <title>3/25/2021: API issues (140m downtime)</title>
+    <title>3/25/2021: API issues (2h20m downtime)</title>
   </circle>
   <circle cx="212.74626269357026" cy="339.5482440929447" r="3.271085446759225" fill="#f59e0b" class="incident-point">
-    <title>4/1/2021: Data control plane performance degradation (107m downtime)</title>
+    <title>4/1/2021: Data control plane performance degradation (1h47m downtime)</title>
   </circle>
   <circle cx="214.00031934814268" cy="339.1049322215353" r="4.604345773288535" fill="#f59e0b" class="incident-point">
-    <title>4/5/2021: Issues with Application Metrics (212m downtime)</title>
+    <title>4/5/2021: Issues with Application Metrics (3h32m downtime)</title>
   </circle>
   <circle cx="214.44685376412616" cy="339.210482667109" r="4.324349662087931" fill="#dc2626" class="incident-point">
-    <title>4/6/2021: Issues accessing billing information, application metrics and enterprise team creation (187m downtime)</title>
+    <title>4/6/2021: Issues accessing billing information, application metrics and enterprise team creation (3h7m downtime)</title>
   </circle>
   <circle cx="215.38692621882814" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>4/9/2021: Heroku Data Service Update on Friday April 09 at 18:00 UTC (14:00 EST/EDT) (0m downtime)</title>
   </circle>
   <circle cx="216.39703407140541" cy="334.4776006875858" r="8" fill="#f59e0b" class="incident-point">
-    <title>4/12/2021: Issues with Application metrics (1308m downtime)</title>
+    <title>4/12/2021: Issues with Application metrics (21h48m downtime)</title>
   </circle>
   <circle cx="216.76483741930755" cy="339.51024593253817" r="3.40587727318528" fill="#f59e0b" class="incident-point">
-    <title>4/13/2021: Issues with upstream provider. (116m downtime)</title>
+    <title>4/13/2021: Issues with upstream provider. (1h56m downtime)</title>
   </circle>
   <circle cx="217.11806964416184" cy="339.4933578612464" r="3.4641016151377544" fill="#f59e0b" class="incident-point">
-    <title>4/14/2021: Some Private Spaces apps inaccessible through HTTPS (120m downtime)</title>
+    <title>4/14/2021: Some Private Spaces apps inaccessible through HTTPS (2h downtime)</title>
   </circle>
   <circle cx="217.2066714730175" cy="339.30758907703677" r="4.049691346263317" fill="#f59e0b" class="incident-point">
-    <title>4/15/2021: Private Space apps experiencing domain to SSL cert mapping errors (164m downtime)</title>
+    <title>4/15/2021: Private Space apps experiencing domain to SSL cert mapping errors (2h44m downtime)</title>
   </circle>
   <circle cx="217.39445094584423" cy="339.4638037364858" r="3.5637059362410923" fill="#f59e0b" class="incident-point">
-    <title>4/15/2021: Issues with dynos (127m downtime)</title>
+    <title>4/15/2021: Issues with dynos (2h7m downtime)</title>
   </circle>
   <circle cx="218.74345491834157" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>4/19/2021: Disabled Accounts (0m downtime)</title>
   </circle>
   <circle cx="218.7613162949809" cy="339.67912664545605" r="3" fill="#f59e0b" class="incident-point">
-    <title>4/19/2021: All credit card accounts impacted with Invoice delivery issues (76m downtime)</title>
+    <title>4/19/2021: All credit card accounts impacted with Invoice delivery issues (1h16m downtime)</title>
   </circle>
   <circle cx="219.48188183150998" cy="339.442693647371" r="3.63318042491699" fill="#f59e0b" class="incident-point">
-    <title>4/21/2021: Increased H10 Errors (132m downtime)</title>
+    <title>4/21/2021: Increased H10 Errors (2h12m downtime)</title>
   </circle>
   <circle cx="219.76296349546587" cy="338.5982900827817" r="5.761944116355173" fill="#f59e0b" class="incident-point">
-    <title>4/22/2021: H10 errors (332m downtime)</title>
+    <title>4/22/2021: H10 errors (5h32m downtime)</title>
   </circle>
   <circle cx="221.43981773654056" cy="338.7882808848143" r="5.357238094391549" fill="#dc2626" class="incident-point">
-    <title>4/27/2021: Authentication Errors (287m downtime)</title>
+    <title>4/27/2021: Authentication Errors (4h47m downtime)</title>
   </circle>
   <circle cx="221.7942250519632" cy="339.683348663279" r="3" fill="#f59e0b" class="incident-point">
-    <title>4/28/2021: Heroku Connect Delay (75m downtime)</title>
+    <title>4/28/2021: Heroku Connect Delay (1h15m downtime)</title>
   </circle>
   <circle cx="222.16202839986536" cy="339.95777982177054" r="3" fill="#f59e0b" class="incident-point">
     <title>4/29/2021: API Errors (10m downtime)</title>
   </circle>
   <circle cx="223.49364103195072" cy="338.96560563337806" r="4.949747468305833" fill="#f59e0b" class="incident-point">
-    <title>5/3/2021: Phantom Dyno Processes on Common Runtime (245m downtime)</title>
+    <title>5/3/2021: Phantom Dyno Processes on Common Runtime (4h5m downtime)</title>
   </circle>
   <circle cx="224.59329078583835" cy="339.53557803947587" r="3.3166247903554" fill="#f59e0b" class="incident-point">
-    <title>5/6/2021: Platform Delays (110m downtime)</title>
+    <title>5/6/2021: Platform Delays (1h50m downtime)</title>
   </circle>
   <circle cx="225.8880055740767" cy="339.2020386314631" r="4.347413023856832" fill="#f59e0b" class="incident-point">
-    <title>5/10/2021: Increased errors from Heroku Postgres Connection Pooling (189m downtime)</title>
+    <title>5/10/2021: Increased errors from Heroku Postgres Connection Pooling (3h9m downtime)</title>
   </circle>
   <circle cx="226.2818959325968" cy="339.94933578612466" r="3" fill="#dc2626" class="incident-point">
     <title>5/11/2021: Degraded services around Salesforce (12m downtime)</title>
@@ -547,7 +541,7 @@
     <title>5/18/2021: Data Services Maintenance on Thursday, May 20 at 18:00 UTC (14:00 EDT) (0m downtime)</title>
   </circle>
   <circle cx="228.8898919400538" cy="339.33714320179735" r="3.96232255123179" fill="#f59e0b" class="incident-point">
-    <title>5/19/2021: Database availability issues (157m downtime)</title>
+    <title>5/19/2021: Database availability issues (2h37m downtime)</title>
   </circle>
   <circle cx="228.97825875079576" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>5/19/2021: Heroku Connect (Oregon) Maintenance on Wednesday, June 2 at 13:00 UTC (09:00 EDT) (0m downtime)</title>
@@ -562,7 +556,7 @@
     <title>5/25/2021: Heroku Connect (Virginia and 2-Virginia) Maintenance on Tuesday, June 8th at 23:00 UTC (19:00 EDT) (0m downtime)</title>
   </circle>
   <circle cx="231.14841601247534" cy="333.9202943349568" r="8" fill="#f59e0b" class="incident-point">
-    <title>5/26/2021: Dropped connections and increased request latencies to Common Runtime dynos (1440m downtime)</title>
+    <title>5/26/2021: Dropped connections and increased request latencies to Common Runtime dynos (24h downtime)</title>
   </circle>
   <circle cx="231.35922726044225" cy="339.7720110375609" r="3" fill="#f59e0b" class="incident-point">
     <title>5/26/2021: Dyno Boot Timeouts (54m downtime)</title>
@@ -571,34 +565,34 @@
     <title>5/27/2021: Dyno Timeouts (27m downtime)</title>
   </circle>
   <circle cx="235.59049337905589" cy="339.5904642711742" r="3.1144823004794873" fill="#f59e0b" class="incident-point">
-    <title>6/8/2021: Issues with CDNs (97m downtime)</title>
+    <title>6/8/2021: Issues with CDNs (1h37m downtime)</title>
   </circle>
   <circle cx="235.83820247086987" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>6/9/2021: Delay in Heroku Connect Synchronization (0m downtime)</title>
   </circle>
   <circle cx="236.00906063951192" cy="339.6453505028725" r="3" fill="#f59e0b" class="incident-point">
-    <title>6/9/2021: Potential routing issues (84m downtime)</title>
+    <title>6/9/2021: Potential routing issues (1h24m downtime)</title>
   </circle>
   <circle cx="236.0179913278316" cy="338.66584236794887" r="5.621387729022079" fill="#f59e0b" class="incident-point">
-    <title>6/9/2021: Intermittent Connectivity Issues with Salesforce and Heroku Connect (316m downtime)</title>
+    <title>6/9/2021: Intermittent Connectivity Issues with Salesforce and Heroku Connect (5h16m downtime)</title>
   </circle>
   <circle cx="236.14983648960356" cy="338.68695245706357" r="5.576737397439475" fill="#f59e0b" class="incident-point">
-    <title>6/10/2021: Routing Issue causing "No Such App" Error (311m downtime)</title>
+    <title>6/10/2021: Routing Issue causing "No Such App" Error (5h11m downtime)</title>
   </circle>
   <circle cx="238.68121659200233" cy="338.56451394019814" r="5.830951894845301" fill="#f59e0b" class="incident-point">
-    <title>6/17/2021: Data Service Update on Tuesday, June 22 at 18:00 UTC (14:00 EST) (340m downtime)</title>
+    <title>6/17/2021: Data Service Update on Tuesday, June 22 at 18:00 UTC (14:00 EST) (5h40m downtime)</title>
   </circle>
   <circle cx="240.5345694364473" cy="339.919781661364" r="3" fill="#f59e0b" class="incident-point">
     <title>6/23/2021: Review App Build Issues (19m downtime)</title>
   </circle>
   <circle cx="242.824115899874" cy="338.40407726292614" r="6.148170459575759" fill="#f59e0b" class="incident-point">
-    <title>6/29/2021: Heroku Data Provisioning Delays (378m downtime)</title>
+    <title>6/29/2021: Heroku Data Provisioning Delays (6h18m downtime)</title>
   </circle>
   <circle cx="242.82646608101075" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>6/29/2021: Authentication Service Update on Wednesday, June 30 at 22:00 UTC (18:00 EDT) (0m downtime)</title>
   </circle>
   <circle cx="243.6640706381502" cy="337.3232407002518" r="7.962411694957753" fill="#f59e0b" class="incident-point">
-    <title>7/2/2021: Potential Issues creating Private Spaces (634m downtime)</title>
+    <title>7/2/2021: Potential Issues creating Private Spaces (10h34m downtime)</title>
   </circle>
   <circle cx="245.43070179864893" cy="339.82267525143624" r="3" fill="#dc2626" class="incident-point">
     <title>7/7/2021: Routing issues in US (42m downtime)</title>
@@ -607,19 +601,19 @@
     <title>7/7/2021: Common Runtime network degradation (0m downtime)</title>
   </circle>
   <circle cx="247.4612583008052" cy="339.29914504139083" r="4.0743097574926725" fill="#f59e0b" class="incident-point">
-    <title>7/13/2021: AWS Issues in Europe (166m downtime)</title>
+    <title>7/13/2021: AWS Issues in Europe (2h46m downtime)</title>
   </circle>
   <circle cx="248.5451618410766" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>7/16/2021: Delayed Invoice Emails (0m downtime)</title>
   </circle>
   <circle cx="249.31884147129634" cy="339.53557803947587" r="3.3166247903554" fill="#f59e0b" class="incident-point">
-    <title>7/19/2021: DNS resolution failures (110m downtime)</title>
+    <title>7/19/2021: DNS resolution failures (1h50m downtime)</title>
   </circle>
   <circle cx="249.37806603594254" cy="339.6369064672266" r="3" fill="#f59e0b" class="incident-point">
-    <title>7/19/2021: Data Dashboard SSL Certificate Revoked (86m downtime)</title>
+    <title>7/19/2021: Data Dashboard SSL Certificate Revoked (1h26m downtime)</title>
   </circle>
   <circle cx="249.89205065055089" cy="339.3920294334957" r="3.794733192202055" fill="#dc2626" class="incident-point">
-    <title>7/20/2021: Dynos not starting (144m downtime)</title>
+    <title>7/20/2021: Dynos not starting (2h24m downtime)</title>
   </circle>
   <circle cx="254.3430587054511" cy="339.8648954296657" r="3" fill="#f59e0b" class="incident-point">
     <title>8/2/2021: One-off dynos failing to launch (32m downtime)</title>
@@ -637,79 +631,79 @@
     <title>8/12/2021: Scheduled Platform API maintenance on Thursday August 12 at 22:00 UTC (18:00 EDT) (37m downtime)</title>
   </circle>
   <circle cx="258.0408337060214" cy="339.2400367918696" r="4.242640687119285" fill="#f59e0b" class="incident-point">
-    <title>8/13/2021: Post-Migration app outages (180m downtime)</title>
+    <title>8/13/2021: Post-Migration app outages (3h downtime)</title>
   </circle>
   <circle cx="260.00276491898444" cy="339.5989083068201" r="3.082207001484488" fill="#f59e0b" class="incident-point">
-    <title>8/19/2021: Issues connecting to one-off dynos in EU (95m downtime)</title>
+    <title>8/19/2021: Issues connecting to one-off dynos in EU (1h35m downtime)</title>
   </circle>
   <circle cx="260.3449512924959" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>8/20/2021: Loss of Database Metrics (0m downtime)</title>
   </circle>
   <circle cx="261.49748012196056" cy="322.98526817352496" r="8" fill="#f59e0b" class="incident-point">
-    <title>8/24/2021: Increase in H10 errors (4030m downtime)</title>
+    <title>8/24/2021: Increase in H10 errors (67h10m downtime)</title>
   </circle>
   <circle cx="261.8685737234542" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>8/25/2021: Database availability issues (0m downtime)</title>
   </circle>
   <circle cx="264.1449591725151" cy="337.2641324507306" r="8" fill="#f59e0b" class="incident-point">
-    <title>8/31/2021: Connectivity in Private Space Oregon region (648m downtime)</title>
+    <title>8/31/2021: Connectivity in Private Space Oregon region (10h48m downtime)</title>
   </circle>
   <circle cx="264.17950683522537" cy="339.1767065245254" r="4.415880433163924" fill="#f59e0b" class="incident-point">
-    <title>8/31/2021: Connectivity to Common Runtime EU apps (195m downtime)</title>
+    <title>8/31/2021: Connectivity to Common Runtime EU apps (3h15m downtime)</title>
   </circle>
   <circle cx="264.2580028851929" cy="338.7038405283554" r="5.540758070878027" fill="#dc2626" class="incident-point">
-    <title>9/1/2021: Issues with release phase, Heroku CI, app setups, and Review apps. (307m downtime)</title>
+    <title>9/1/2021: Issues with release phase, Heroku CI, app setups, and Review apps. (5h7m downtime)</title>
   </circle>
   <circle cx="264.7715174635739" cy="339.5313560216529" r="3.331666249791536" fill="#f59e0b" class="incident-point">
-    <title>9/2/2021: Increased H31 Errors (111m downtime)</title>
+    <title>9/2/2021: Increased H31 Errors (1h51m downtime)</title>
   </circle>
   <circle cx="265.0389680769366" cy="338.31119287082134" r="6.324555320336759" fill="#f59e0b" class="incident-point">
-    <title>9/3/2021: Investigating Issues with build failures (400m downtime)</title>
+    <title>9/3/2021: Investigating Issues with build failures (6h40m downtime)</title>
   </circle>
   <circle cx="268.4474357795724" cy="339.54402207512175" r="3.286335345030997" fill="#f59e0b" class="incident-point">
-    <title>9/13/2021: Issues with booting one-off dynos in US (108m downtime)</title>
+    <title>9/13/2021: Issues with booting one-off dynos in US (1h48m downtime)</title>
   </circle>
   <circle cx="268.50101990949037" cy="339.40891750478744" r="3.7416573867739413" fill="#f59e0b" class="incident-point">
-    <title>9/13/2021: Issues with provisioning data services (140m downtime)</title>
+    <title>9/13/2021: Issues with provisioning data services (2h20m downtime)</title>
   </circle>
   <circle cx="268.8305153048634" cy="339.92400367918697" r="3" fill="#f59e0b" class="incident-point">
     <title>9/14/2021: H10 Errors In The Common Runtime (18m downtime)</title>
   </circle>
   <circle cx="269.70619279641835" cy="339.45113768301695" r="3.605551275463989" fill="#dc2626" class="incident-point">
-    <title>9/17/2021: Issue accessing common runtime applications in EU Region (130m downtime)</title>
+    <title>9/17/2021: Issue accessing common runtime applications in EU Region (2h10m downtime)</title>
   </circle>
   <circle cx="270.7625992173897" cy="339.84800735837393" r="3" fill="#dc2626" class="incident-point">
     <title>9/20/2021: Issue accessing Common Runtime applications in EU region (36m downtime)</title>
   </circle>
   <circle cx="273.0392196845642" cy="337.4119030745337" r="7.829431652425353" fill="#dc2626" class="incident-point">
-    <title>9/27/2021: Database availability issues (613m downtime)</title>
+    <title>9/27/2021: Database availability issues (10h13m downtime)</title>
   </circle>
   <circle cx="273.0876334159814" cy="338.2731947104148" r="6.395310782127793" fill="#f59e0b" class="incident-point">
-    <title>9/27/2021: Dyno Issues (409m downtime)</title>
+    <title>9/27/2021: Dyno Issues (6h49m downtime)</title>
   </circle>
   <circle cx="273.6208895159111" cy="339.5144679503611" r="3.391164991562634" fill="#dc2626" class="incident-point">
-    <title>9/28/2021: Missing Metrics (115m downtime)</title>
+    <title>9/28/2021: Missing Metrics (1h55m downtime)</title>
   </circle>
   <circle cx="273.98540261022174" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>9/29/2021: Common Runtime maintenance on Wednesday, September 29 at 22:00 UTC (18:00 EST) (0m downtime)</title>
   </circle>
   <circle cx="274.23875213676394" cy="339.34136521962034" r="3.9496835316262997" fill="#dc2626" class="incident-point">
-    <title>9/30/2021: Missing Metrics, Heroku Connect Dashboard Unavailable (156m downtime)</title>
+    <title>9/30/2021: Missing Metrics, Heroku Connect Dashboard Unavailable (2h36m downtime)</title>
   </circle>
   <circle cx="276.0777688762747" cy="339.71712480586257" r="3" fill="#f59e0b" class="incident-point">
-    <title>10/6/2021: API Errors (67m downtime)</title>
+    <title>10/6/2021: API Errors (1h7m downtime)</title>
   </circle>
   <circle cx="276.3376989099998" cy="339.75090094844614" r="3" fill="#f59e0b" class="incident-point">
     <title>10/6/2021: Lost router logs in Common Runtime US and Private Space Virginia regions (59m downtime)</title>
   </circle>
   <circle cx="276.62489104491124" cy="339.74245691280026" r="3" fill="#f59e0b" class="incident-point">
-    <title>10/7/2021: Upstream DNS Resolution Failures (61m downtime)</title>
+    <title>10/7/2021: Upstream DNS Resolution Failures (1h1m downtime)</title>
   </circle>
   <circle cx="278.0220737307121" cy="339.8057871801445" r="3" fill="#f59e0b" class="incident-point">
     <title>10/11/2021: Scheduled Platform API maintenance on Wednesday, October 20 at 16:00 UTC (12:00 EDT) (46m downtime)</title>
   </circle>
   <circle cx="278.3231319343304" cy="334.0300667983534" r="8" fill="#f59e0b" class="incident-point">
-    <title>10/12/2021: Declined credit card billing in India (1414m downtime)</title>
+    <title>10/12/2021: Declined credit card billing in India (23h34m downtime)</title>
   </circle>
   <circle cx="278.80703423038824" cy="339.92400367918697" r="3" fill="#f59e0b" class="incident-point">
     <title>10/14/2021: Lost requests to Common Runtime US and EU apps (18m downtime)</title>
@@ -721,7 +715,7 @@
     <title>10/19/2021: Inaccessible Event Data (26m downtime)</title>
   </circle>
   <circle cx="280.73277265384525" cy="339.603130324643" r="3.0659419433511785" fill="#f59e0b" class="incident-point">
-    <title>10/19/2021: Database Connectivity Issues (94m downtime)</title>
+    <title>10/19/2021: Database Connectivity Issues (1h34m downtime)</title>
   </circle>
   <circle cx="280.8166741204274" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>10/20/2021: SSL Endpoint Planned Service Degradation on Tuesday, October 26 at 16:00 UTC (noon EDT) (0m downtime)</title>
@@ -733,7 +727,7 @@
     <title>10/20/2021: SSL Endpoint Planned Service Degradation on Wednesday, October 27 at 00:00 UTC (0m downtime)</title>
   </circle>
   <circle cx="281.40374936838884" cy="334.220057600386" r="8" fill="#f59e0b" class="incident-point">
-    <title>10/21/2021: Some Records Not Being Synced By Heroku Connect (1369m downtime)</title>
+    <title>10/21/2021: Some Records Not Being Synced By Heroku Connect (22h49m downtime)</title>
   </circle>
   <circle cx="281.7487559592645" cy="339.83956332272805" r="3" fill="#f59e0b" class="incident-point">
     <title>10/22/2021: API token failures (38m downtime)</title>
@@ -748,7 +742,7 @@
     <title>11/3/2021: API issues (0m downtime)</title>
   </circle>
   <circle cx="287.8366651759145" cy="339.1049322215353" r="4.604345773288535" fill="#f59e0b" class="incident-point">
-    <title>11/9/2021: Timeouts in builds of apps (212m downtime)</title>
+    <title>11/9/2021: Timeouts in builds of apps (3h32m downtime)</title>
   </circle>
   <circle cx="292.95465463742585" cy="339.8311192870821" r="3" fill="#f59e0b" class="incident-point">
     <title>11/24/2021: Degraded availability (40m downtime)</title>
@@ -757,7 +751,7 @@
     <title>11/26/2021: Degraded availability (39m downtime)</title>
   </circle>
   <circle cx="293.882271132103" cy="338.86427720562733" r="5.186520991955976" fill="#f59e0b" class="incident-point">
-    <title>11/27/2021: Platform Incident (269m downtime)</title>
+    <title>11/27/2021: Platform Incident (4h29m downtime)</title>
   </circle>
   <circle cx="294.902719781682" cy="339.93244771483285" r="3" fill="#f59e0b" class="incident-point">
     <title>11/30/2021: Degraded Availability (16m downtime)</title>
@@ -769,13 +763,13 @@
     <title>12/2/2021: heroku.com Availability issues (29m downtime)</title>
   </circle>
   <circle cx="297.26512186034813" cy="337.23457832596995" r="8" fill="#dc2626" class="incident-point">
-    <title>12/7/2021: Availability issues with upstream provider impacting apps in US and EU regions (655m downtime)</title>
+    <title>12/7/2021: Availability issues with upstream provider impacting apps in US and EU regions (10h55m downtime)</title>
   </circle>
   <circle cx="299.95607926193253" cy="339.6242404137578" r="3" fill="#f59e0b" class="incident-point">
-    <title>12/15/2021: Availability issues with upstream provider impacting apps in Private Space Oregon region (89m downtime)</title>
+    <title>12/15/2021: Availability issues with upstream provider impacting apps in Private Space Oregon region (1h29m downtime)</title>
   </circle>
   <circle cx="302.2954495654584" cy="331.4884120689395" r="8" fill="#f59e0b" class="incident-point">
-    <title>12/22/2021: Issues with upstream provider (2016m downtime)</title>
+    <title>12/22/2021: Issues with upstream provider (33h36m downtime)</title>
   </circle>
   <circle cx="306.65738575527564" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>1/4/2022: Request latencies on the default domain (0m downtime)</title>
@@ -793,10 +787,10 @@
     <title>1/20/2022: Issues with upstream DNS provider (54m downtime)</title>
   </circle>
   <circle cx="316.51733569641743" cy="338.40407726292614" r="6.148170459575759" fill="#f59e0b" class="incident-point">
-    <title>2/2/2022: Issues with Heroku API (378m downtime)</title>
+    <title>2/2/2022: Issues with Heroku API (6h18m downtime)</title>
   </circle>
   <circle cx="317.686550811953" cy="339.6242404137578" r="3" fill="#f59e0b" class="incident-point">
-    <title>2/6/2022: Heroku deployment tools are impacted by a Github incident (89m downtime)</title>
+    <title>2/6/2022: Heroku deployment tools are impacted by a Github incident (1h29m downtime)</title>
   </circle>
   <circle cx="318.3062935777153" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>2/7/2022: Intermittent access issues for help.heroku.com (0m downtime)</title>
@@ -805,7 +799,7 @@
     <title>2/15/2022: Issues with Heroku Dashboard Login (0m downtime)</title>
   </circle>
   <circle cx="323.99937236339053" cy="339.70445875239375" r="3" fill="#f59e0b" class="incident-point">
-    <title>2/24/2022: Availability of Common Runtime apps (70m downtime)</title>
+    <title>2/24/2022: Availability of Common Runtime apps (1h10m downtime)</title>
   </circle>
   <circle cx="324.37587138149865" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>2/25/2022: Heroku logging service performance degradation (0m downtime)</title>
@@ -820,13 +814,13 @@
     <title>3/15/2022: Issues with our help portal (0m downtime)</title>
   </circle>
   <circle cx="331.06213671556657" cy="337.7285544112547" r="7.334848328356899" fill="#f59e0b" class="incident-point">
-    <title>3/17/2022: Intermittent Errors Creating Heroku Connect Add-on (538m downtime)</title>
+    <title>3/17/2022: Intermittent Errors Creating Heroku Connect Add-on (8h58m downtime)</title>
   </circle>
   <circle cx="333.17330443071353" cy="339.6200183959348" r="3" fill="#f59e0b" class="incident-point">
-    <title>3/23/2022: Issues with Heroku Dashboard and our help portal (90m downtime)</title>
+    <title>3/23/2022: Issues with Heroku Dashboard and our help portal (1h30m downtime)</title>
   </circle>
   <circle cx="333.35544346881204" cy="330.0107058309082" r="8" fill="#f59e0b" class="incident-point">
-    <title>3/24/2022: Heroku Connect errors (2366m downtime)</title>
+    <title>3/24/2022: Heroku Connect errors (39h26m downtime)</title>
   </circle>
   <circle cx="333.4882287030387" cy="339.99577798217706" r="3" fill="#f59e0b" class="incident-point">
     <title>3/24/2022: Authentication errors (1m downtime)</title>
@@ -835,10 +829,10 @@
     <title>4/4/2022: Issues creating test apps with Heroku CI (11m downtime)</title>
   </circle>
   <circle cx="341.0069281957452" cy="60" r="8" fill="#f59e0b" class="incident-point">
-    <title>4/15/2022: Heroku Security Notification (66319m downtime)</title>
+    <title>4/15/2022: Heroku Security Notification (1105h19m downtime)</title>
   </circle>
   <circle cx="342.62432285406" cy="339.7129027880396" r="3" fill="#f59e0b" class="incident-point">
-    <title>4/20/2022: Issues with Heroku Team Invites (68m downtime)</title>
+    <title>4/20/2022: Issues with Heroku Team Invites (1h8m downtime)</title>
   </circle>
   <circle cx="343.0616915636101" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>4/22/2022: Heroku Connect (Oregon) Urgent Maintenance on Monday, April 25th at 15:00 UTC (11:00 EDT) (0m downtime)</title>
@@ -853,22 +847,22 @@
     <title>4/22/2022: Heroku Connect (Virginia) Urgent Maintenance on Wednesday, April 27th at 03:00 UTC (Tuesday, April 26th at 23:00 EDT) (0m downtime)</title>
   </circle>
   <circle cx="343.4078732450541" cy="339.56091014641356" r="3.22490309931942" fill="#f59e0b" class="incident-point">
-    <title>4/23/2022: Issues with Heroku logs, New Apps, Heroku CRUD for log Drains (104m downtime)</title>
+    <title>4/23/2022: Issues with Heroku logs, New Apps, Heroku CRUD for log Drains (1h44m downtime)</title>
   </circle>
   <circle cx="344.44007280031684" cy="337.55122966269096" r="7.615773105863909" fill="#dc2626" class="incident-point">
-    <title>4/26/2022: Issues with Dyno Restarts, Builds, Releases and Heroku CI (580m downtime)</title>
+    <title>4/26/2022: Issues with Dyno Restarts, Builds, Releases and Heroku CI (9h40m downtime)</title>
   </circle>
   <circle cx="344.46004933997926" cy="339.0331579185452" r="4.78539444560216" fill="#f59e0b" class="incident-point">
-    <title>4/26/2022: Heroku logging service issues (229m downtime)</title>
+    <title>4/26/2022: Heroku logging service issues (3h49m downtime)</title>
   </circle>
   <circle cx="344.5371352812648" cy="339.33714320179735" r="3.96232255123179" fill="#f59e0b" class="incident-point">
-    <title>4/26/2022: Issues using data products (157m downtime)</title>
+    <title>4/26/2022: Issues using data products (2h37m downtime)</title>
   </circle>
   <circle cx="344.61116598707264" cy="332.68324311283345" r="8" fill="#f59e0b" class="incident-point">
-    <title>4/26/2022: Issues using data products (1733m downtime)</title>
+    <title>4/26/2022: Issues using data products (28h53m downtime)</title>
   </circle>
   <circle cx="345.340192175694" cy="339.19781661364016" r="4.358898943540674" fill="#f59e0b" class="incident-point">
-    <title>4/28/2022: Help Ticket Submission Failures (190m downtime)</title>
+    <title>4/28/2022: Help Ticket Submission Failures (3h10m downtime)</title>
   </circle>
   <circle cx="346.6569986666178" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>5/2/2022: Issues accessing status site (0m downtime)</title>
@@ -883,10 +877,10 @@
     <title>5/6/2022: Issues with opening Add-on pages (14m downtime)</title>
   </circle>
   <circle cx="350.0826226915519" cy="339.6284624315807" r="3" fill="#f59e0b" class="incident-point">
-    <title>5/12/2022: Heroku git push errors (88m downtime)</title>
+    <title>5/12/2022: Heroku git push errors (1h28m downtime)</title>
   </circle>
   <circle cx="350.6022477408884" cy="329.1071940167976" r="8" fill="#f59e0b" class="incident-point">
-    <title>5/14/2022: Missing Heroku private space app metrics (2580m downtime)</title>
+    <title>5/14/2022: Missing Heroku private space app metrics (43h downtime)</title>
   </circle>
   <circle cx="351.4203457945928" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>5/16/2022: Heroku Exec Maintenance on Thursday, May 19th at 15:00 UTC (11:00 EDT) (0m downtime)</title>
@@ -895,19 +889,19 @@
     <title>5/16/2022: Errors in viewing Dev Center articles (40m downtime)</title>
   </circle>
   <circle cx="354.11106817806353" cy="339.54402207512175" r="3.286335345030997" fill="#f59e0b" class="incident-point">
-    <title>5/24/2022: Delays in metrics from Heroku Postgres (108m downtime)</title>
+    <title>5/24/2022: Delays in metrics from Heroku Postgres (1h48m downtime)</title>
   </circle>
   <circle cx="359.23399301996204" cy="333.40943017838026" r="8" fill="#f59e0b" class="incident-point">
-    <title>6/8/2022: Issue with provisioning some third-party add-ons (1561m downtime)</title>
+    <title>6/8/2022: Issue with provisioning some third-party add-ons (26h1m downtime)</title>
   </circle>
   <circle cx="359.5019136695521" cy="339.9408917504787" r="3" fill="#f59e0b" class="incident-point">
     <title>6/9/2022: Heroku support mailer issues (14m downtime)</title>
   </circle>
   <circle cx="359.6976837582438" cy="339.1893725779942" r="4.381780460041329" fill="#f59e0b" class="incident-point">
-    <title>6/10/2022: Issues with Platform API, Dyno Restarts, Builds, Releases and Heroku Dashboard (192m downtime)</title>
+    <title>6/10/2022: Issues with Platform API, Dyno Restarts, Builds, Releases and Heroku Dashboard (3h12m downtime)</title>
   </circle>
   <circle cx="361.75644243404116" cy="339.48069180777753" r="3.5071355833500366" fill="#dc2626" class="incident-point">
-    <title>6/16/2022: Platform API errors affecting Dashboard and Heroku CLI (123m downtime)</title>
+    <title>6/16/2022: Platform API errors affecting Dashboard and Heroku CLI (2h3m downtime)</title>
   </circle>
   <circle cx="361.8739514908789" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>6/16/2022: Maintenance in Dublin and Virginia regions at off-peak hours (0m downtime)</title>
@@ -925,13 +919,13 @@
     <title>6/21/2022: Heroku apps unreachable (0m downtime)</title>
   </circle>
   <circle cx="369.19030038771075" cy="339.6284624315807" r="3" fill="#f59e0b" class="incident-point">
-    <title>7/8/2022: Heroku logging service issues (88m downtime)</title>
+    <title>7/8/2022: Heroku logging service issues (1h28m downtime)</title>
   </circle>
   <circle cx="372.38325648010607" cy="339.56091014641356" r="3.22490309931942" fill="#f59e0b" class="incident-point">
-    <title>7/17/2022: Issues connecting to Postgres Database (104m downtime)</title>
+    <title>7/17/2022: Issues connecting to Postgres Database (1h44m downtime)</title>
   </circle>
   <circle cx="372.7769118205125" cy="339.33714320179735" r="3.96232255123179" fill="#f59e0b" class="incident-point">
-    <title>7/18/2022: Issue accessing invoices (157m downtime)</title>
+    <title>7/18/2022: Issue accessing invoices (2h37m downtime)</title>
   </circle>
   <circle cx="373.8206272633454" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>7/21/2022: git.heroku.com Maintenance on Monday, August 1st at 18:00 UTC (0m downtime)</title>
@@ -940,7 +934,7 @@
     <title>7/22/2022: Notification System Maintenance on Thursday, July 28th at 16:00 UTC (0m downtime)</title>
   </circle>
   <circle cx="376.11722427018236" cy="338.9487175620863" r="4.9899899799498595" fill="#f59e0b" class="incident-point">
-    <title>7/28/2022: Issues with Dashboard Metrics (249m downtime)</title>
+    <title>7/28/2022: Issues with Dashboard Metrics (4h9m downtime)</title>
   </circle>
   <circle cx="380.79855007648456" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>8/11/2022: Issues accessing status site (0m downtime)</title>
@@ -955,13 +949,13 @@
     <title>8/17/2022: Sync delay in Heroku connect (Dublin region) (0m downtime)</title>
   </circle>
   <circle cx="384.9884530070913" cy="338.48429560156217" r="5.991660871578097" fill="#f59e0b" class="incident-point">
-    <title>8/23/2022: Issues with upstream DNS provider (359m downtime)</title>
+    <title>8/23/2022: Issues with upstream DNS provider (5h59m downtime)</title>
   </circle>
   <circle cx="385.92664531688393" cy="339.8902275366034" r="3" fill="#f59e0b" class="incident-point">
     <title>8/26/2022: Issues with DNS resolution (26m downtime)</title>
   </circle>
   <circle cx="387.21430956171196" cy="339.6622385741643" r="3" fill="#f59e0b" class="incident-point">
-    <title>8/30/2022: Issues with DNS provider (80m downtime)</title>
+    <title>8/30/2022: Issues with DNS provider (1h20m downtime)</title>
   </circle>
   <circle cx="390.3917544586047" cy="339.9662238574164" r="3" fill="#f59e0b" class="incident-point">
     <title>9/8/2022: Database unavailable for Heroku Connect in Virginia region (8m downtime)</title>
@@ -985,13 +979,13 @@
     <title>9/28/2022: Platform API errors affecting Dashboard and Heroku CLI (0m downtime)</title>
   </circle>
   <circle cx="399.1727362398622" cy="338.0494277657986" r="6.797058187186572" fill="#f59e0b" class="incident-point">
-    <title>10/4/2022: Issues with DNS provider (462m downtime)</title>
+    <title>10/4/2022: Issues with DNS provider (7h42m downtime)</title>
   </circle>
   <circle cx="399.5240883198071" cy="339.24425880969255" r="4.230839160261236" fill="#f59e0b" class="incident-point">
-    <title>10/5/2022: Issues with Free Dyno Hours (179m downtime)</title>
+    <title>10/5/2022: Issues with Free Dyno Hours (2h59m downtime)</title>
   </circle>
   <circle cx="403.93772849463295" cy="339.54402207512175" r="3.286335345030997" fill="#f59e0b" class="incident-point">
-    <title>10/18/2022: Issues accessing the Deploy Hooks add-on (108m downtime)</title>
+    <title>10/18/2022: Issues accessing the Deploy Hooks add-on (1h48m downtime)</title>
   </circle>
   <circle cx="409.3111826457095" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>11/3/2022: Issues with Node Build Failures (0m downtime)</title>
@@ -1000,22 +994,22 @@
     <title>11/15/2022: Webhooks Maintenance on Wednesday 30 NOV at 15:00 UTC (0m downtime)</title>
   </circle>
   <circle cx="413.5579599598257" cy="339.36247530873504" r="3.8858718455450894" fill="#f59e0b" class="incident-point">
-    <title>11/16/2022: Platform Incident - Dyno Crashes (151m downtime)</title>
+    <title>11/16/2022: Platform Incident - Dyno Crashes (2h31m downtime)</title>
   </circle>
   <circle cx="416.07312381238086" cy="339.9915559643541" r="3" fill="#f59e0b" class="incident-point">
     <title>11/23/2022: HTTP Failures (2m downtime)</title>
   </circle>
   <circle cx="418.0978048616953" cy="339.69601471674787" r="3" fill="#f59e0b" class="incident-point">
-    <title>11/29/2022: Issues with Add-on Provisioning and Management (72m downtime)</title>
+    <title>11/29/2022: Issues with Add-on Provisioning and Management (1h12m downtime)</title>
   </circle>
   <circle cx="418.143633393862" cy="337.9565433736938" r="6.957010852370434" fill="#f59e0b" class="incident-point">
-    <title>11/29/2022: DNS propagation delays in Common Runtime and Private Spaces (484m downtime)</title>
+    <title>11/29/2022: DNS propagation delays in Common Runtime and Private Spaces (8h4m downtime)</title>
   </circle>
   <circle cx="418.3847619784931" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>11/30/2022: Heroku Review App creation delays (0m downtime)</title>
   </circle>
   <circle cx="418.5107316874232" cy="339.5862422533512" r="3.1304951684997055" fill="#f59e0b" class="incident-point">
-    <title>11/30/2022: DNS propagation delays in Common Runtime and Private Spaces (98m downtime)</title>
+    <title>11/30/2022: DNS propagation delays in Common Runtime and Private Spaces (1h38m downtime)</title>
   </circle>
   <circle cx="418.5109667055368" cy="339.8564513940198" r="3" fill="#f59e0b" class="incident-point">
     <title>11/30/2022: Heroku Routing Availability Issues - Resolved (34m downtime)</title>
@@ -1024,7 +1018,7 @@
     <title>12/3/2022: Issues with DNS provider (55m downtime)</title>
   </circle>
   <circle cx="420.43741018333486" cy="321.6046683454214" r="8" fill="#f59e0b" class="incident-point">
-    <title>12/6/2022: Performance degradation with Heroku Webhooks (4357m downtime)</title>
+    <title>12/6/2022: Performance degradation with Heroku Webhooks (72h37m downtime)</title>
   </circle>
   <circle cx="420.57842105154015" cy="339.77623305538384" r="3" fill="#f59e0b" class="incident-point">
     <title>12/7/2022: DNS propagation delays in Common Runtime and Private Spaces (53m downtime)</title>
@@ -1033,7 +1027,7 @@
     <title>12/8/2022: Platform API errors affecting Dashboard and Heroku CLI (0m downtime)</title>
   </circle>
   <circle cx="421.23788187851363" cy="339.3455872374433" r="3.9370039370059056" fill="#f59e0b" class="incident-point">
-    <title>12/9/2022: Routing Performance Disruption (155m downtime)</title>
+    <title>12/9/2022: Routing Performance Disruption (2h35m downtime)</title>
   </circle>
   <circle cx="425.66021772354543" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>12/22/2022: Automated Certificate Management unable to complete (0m downtime)</title>
@@ -1042,19 +1036,19 @@
     <title>12/29/2022: Issues with DNS provider (21m downtime)</title>
   </circle>
   <circle cx="432.88749475529426" cy="339.31603311268265" r="4.024922359499621" fill="#f59e0b" class="incident-point">
-    <title>1/12/2023: DNS Resolution Issues Impacting New Apps (162m downtime)</title>
+    <title>1/12/2023: DNS Resolution Issues Impacting New Apps (2h42m downtime)</title>
   </circle>
   <circle cx="435.6038341131557" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>1/20/2023: Data Service Update on February 1, 2023 at 18:00 UTC (13:00 EST/EDT) (0m downtime)</title>
   </circle>
   <circle cx="435.6489575909814" cy="338.60251210060466" r="5.75325994545701" fill="#f59e0b" class="incident-point">
-    <title>1/20/2023: Issues with Docker builds (331m downtime)</title>
+    <title>1/20/2023: Issues with Docker builds (5h31m downtime)</title>
   </circle>
   <circle cx="439.4766976084142" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>1/31/2023: Dashboard Service Update on February 9th, 2023 at 17:00 UTC(12:00 EST) (0m downtime)</title>
   </circle>
   <circle cx="439.52370123114935" cy="338.7882808848143" r="5.357238094391549" fill="#dc2626" class="incident-point">
-    <title>2/1/2023: Inability to connect to Heroku Postgres on Basic plans (287m downtime)</title>
+    <title>2/1/2023: Inability to connect to Heroku Postgres on Basic plans (4h47m downtime)</title>
   </circle>
   <circle cx="442.125351749537" cy="339.8100091979674" r="3" fill="#dc2626" class="incident-point">
     <title>2/8/2023: Increased H20s for Heroku Customers (45m downtime)</title>
@@ -1072,16 +1066,16 @@
     <title>3/16/2023: Internal Service Maintenance for Heroku Data Services scheduled on Tuesday March 28, 2023 18:00 UTC (0m downtime)</title>
   </circle>
   <circle cx="454.3714405988261" cy="337.4921214131697" r="7.707139547199077" fill="#dc2626" class="incident-point">
-    <title>3/16/2023: Platform API Outage (594m downtime)</title>
+    <title>3/16/2023: Platform API Outage (9h54m downtime)</title>
   </circle>
   <circle cx="455.52749469999594" cy="339.45113768301695" r="3.605551275463989" fill="#f59e0b" class="incident-point">
-    <title>3/20/2023: Heroku Homepage Unavailability (130m downtime)</title>
+    <title>3/20/2023: Heroku Homepage Unavailability (2h10m downtime)</title>
   </circle>
   <circle cx="456.4184483689397" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>3/22/2023: Private Spaces &amp; Common Runtime Maintenance on Wednesday, March 29, 2023, starting at  16:00 UTC (0m downtime)</title>
   </circle>
   <circle cx="460.1747428798152" cy="339.38780741567274" r="3.8078865529319543" fill="#f59e0b" class="incident-point">
-    <title>4/3/2023: H20 "App Boot Timeout" errors on Standard-2x Dynos (145m downtime)</title>
+    <title>4/3/2023: H20 "App Boot Timeout" errors on Standard-2x Dynos (2h25m downtime)</title>
   </circle>
   <circle cx="461.2393749347652" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>4/6/2023: Heroku Connect add-ons in the Tokyo and Sydney regions will undergo a service update on April 18, 2023, starting at 17:00 UTC. (0m downtime)</title>
@@ -1117,7 +1111,7 @@
     <title>5/2/2023: Issues with Heroku API, Dashboard, and CLI (15m downtime)</title>
   </circle>
   <circle cx="470.0974426573083" cy="339.5186899681841" r="3.3763886032268267" fill="#dc2626" class="incident-point">
-    <title>5/2/2023: Issues with Heroku API, Dashboard, and CLI (114m downtime)</title>
+    <title>5/2/2023: Issues with Heroku API, Dashboard, and CLI (1h54m downtime)</title>
   </circle>
   <circle cx="472.5747685935617" cy="339.9366697326558" r="3" fill="#dc2626" class="incident-point">
     <title>5/9/2023: Issues with Heroku Redis Services (15m downtime)</title>
@@ -1132,7 +1126,7 @@
     <title>5/13/2023: Elevated H21 - Backend Connection Refused Errors (35m downtime)</title>
   </circle>
   <circle cx="473.90121082714626" cy="339.42580557607926" r="3.687817782917155" fill="#f59e0b" class="incident-point">
-    <title>5/13/2023: Elevated H21 - Backend Connection Refused Errors (136m downtime)</title>
+    <title>5/13/2023: Elevated H21 - Backend Connection Refused Errors (2h16m downtime)</title>
   </circle>
   <circle cx="474.92565478465775" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>5/16/2023: Heroku Logtails will undergo a service update on Tuesday May 23 starting at 2 am to 3:30 am UTC (Monday May 22, 10:00 pm - 11:30 pm EDT) (0m downtime)</title>
@@ -1159,10 +1153,10 @@
     <title>5/25/2023: Heroku home page service update on Wednesday, May 31 at 00:00 UTC (Tuesday 20:00 EDT) (0m downtime)</title>
   </circle>
   <circle cx="479.7341253904584" cy="338.8389450986897" r="5.244044240850758" fill="#f59e0b" class="incident-point">
-    <title>5/30/2023: Common Runtime Apps Throwing H10 Errors (275m downtime)</title>
+    <title>5/30/2023: Common Runtime Apps Throwing H10 Errors (4h35m downtime)</title>
   </circle>
   <circle cx="479.82131711063204" cy="339.683348663279" r="3" fill="#dc2626" class="incident-point">
-    <title>5/31/2023: Issues with Heroku Platform API, Dashboard and CLI (75m downtime)</title>
+    <title>5/31/2023: Issues with Heroku Platform API, Dashboard and CLI (1h15m downtime)</title>
   </circle>
   <circle cx="482.4415340600001" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>6/7/2023: Heroku ChatOps Service Update on Tuesday June 13, 2023 starting at 14:00 UTC (0m downtime)</title>
@@ -1171,7 +1165,7 @@
     <title>6/7/2023: Heroku Dashboard Service Update on Tuesday, June 13, 2023 starting at 16:30 UTC (12:30 EDT) (0m downtime)</title>
   </circle>
   <circle cx="482.71462510809107" cy="339.683348663279" r="3" fill="#dc2626" class="incident-point">
-    <title>6/8/2023: Issues with Heroku API, Dashboard, and CLI (75m downtime)</title>
+    <title>6/8/2023: Issues with Heroku API, Dashboard, and CLI (1h15m downtime)</title>
   </circle>
   <circle cx="483.0645670793539" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>6/9/2023: Heroku Builds API maintenance on Thursday, June 22, 2023, at 14:00 UTC (10:00 EDT) (0m downtime)</title>
@@ -1189,7 +1183,7 @@
     <title>7/11/2023: Heroku Front-End Dashboards Service Update on Wednesday July 26 at 17:30 UTC (13:30  EDT) (0m downtime)</title>
   </circle>
   <circle cx="493.8514284608318" cy="338.6785084214177" r="5.594640292279746" fill="#f59e0b" class="incident-point">
-    <title>7/11/2023: Heroku Postgres Multi-Tenant Host Outage (313m downtime)</title>
+    <title>7/11/2023: Heroku Postgres Multi-Tenant Host Outage (5h13m downtime)</title>
   </circle>
   <circle cx="495.01805837711703" cy="339.8564513940198" r="3" fill="#f59e0b" class="incident-point">
     <title>7/15/2023: Issues with upstream DNS provider (34m downtime)</title>
@@ -1201,7 +1195,7 @@
     <title>7/21/2023: Heroku Platform API’s Maintenance on Tuesday, 8th August at 17:00 UTC (13:00 EDT) (0m downtime)</title>
   </circle>
   <circle cx="498.8030250978609" cy="339.71712480586257" r="3" fill="#f59e0b" class="incident-point">
-    <title>7/26/2023: Issues with upstream DNS provider (67m downtime)</title>
+    <title>7/26/2023: Issues with upstream DNS provider (1h7m downtime)</title>
   </circle>
   <circle cx="499.64979536143363" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>7/28/2023: Heroku Internal Database Service Update on Thursday, August 10th at 17:30 UTC (13:30 EDT) (0m downtime)</title>
@@ -1225,40 +1219,40 @@
     <title>8/14/2023: Issues provisioning dynos in Common Runtime (27m downtime)</title>
   </circle>
   <circle cx="506.36402785102894" cy="339.3582532909121" r="3.8987177379235853" fill="#dc2626" class="incident-point">
-    <title>8/17/2023: Platform Degradation Impacting Multiple Services (152m downtime)</title>
+    <title>8/17/2023: Platform Degradation Impacting Multiple Services (2h32m downtime)</title>
   </circle>
   <circle cx="506.75415791973023" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>8/18/2023: Issues with Dyno operations (0m downtime)</title>
   </circle>
   <circle cx="506.809387176444" cy="338.8769432590962" r="5.157518783291051" fill="#f59e0b" class="incident-point">
-    <title>8/18/2023: Customers are seeing elevated H20s "App Boot Timeout" on the Common Runtime, EU region. (266m downtime)</title>
+    <title>8/18/2023: Customers are seeing elevated H20s "App Boot Timeout" on the Common Runtime, EU region. (4h26m downtime)</title>
   </circle>
   <circle cx="510.829607028977" cy="339.1049322215353" r="4.604345773288535" fill="#f59e0b" class="incident-point">
-    <title>8/30/2023: Issue with Deployment of Review and Test apps (212m downtime)</title>
+    <title>8/30/2023: Issue with Deployment of Review and Test apps (3h32m downtime)</title>
   </circle>
   <circle cx="512.5863674287014" cy="338.09586996185106" r="6.715653356152326" fill="#f59e0b" class="incident-point">
-    <title>9/4/2023: Investigating Issues with build failures (451m downtime)</title>
+    <title>9/4/2023: Investigating Issues with build failures (7h31m downtime)</title>
   </circle>
   <circle cx="512.735838948999" cy="338.5518478867293" r="5.856620185738529" fill="#f59e0b" class="incident-point">
-    <title>9/5/2023: Intermittent build failures (343m downtime)</title>
+    <title>9/5/2023: Intermittent build failures (5h43m downtime)</title>
   </circle>
   <circle cx="512.8916559583658" cy="336.24240413757747" r="8" fill="#dc2626" class="incident-point">
-    <title>9/5/2023: Account Reinstatement issues (890m downtime)</title>
+    <title>9/5/2023: Account Reinstatement issues (14h50m downtime)</title>
   </circle>
   <circle cx="513.0829607028977" cy="339.41313952261044" r="3.7282703764614498" fill="#f59e0b" class="incident-point">
-    <title>9/6/2023: Intermittent build failures (139m downtime)</title>
+    <title>9/6/2023: Intermittent build failures (2h19m downtime)</title>
   </circle>
   <circle cx="520.2782752711868" cy="338.7798368491684" r="5.375872022286245" fill="#f59e0b" class="incident-point">
-    <title>9/27/2023: Routing failures on Common Runtime, EU region (289m downtime)</title>
+    <title>9/27/2023: Routing failures on Common Runtime, EU region (4h49m downtime)</title>
   </circle>
   <circle cx="522.2752241830874" cy="336.4746151178395" r="8" fill="#f59e0b" class="incident-point">
-    <title>10/3/2023: Release failures and Dyno relocations on Common Runtime (835m downtime)</title>
+    <title>10/3/2023: Release failures and Dyno relocations on Common Runtime (13h55m downtime)</title>
   </circle>
   <circle cx="525.1212935396977" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>10/11/2023: Heroku Maintenance on Wednesday, October 25th, 2023 at 12:00 AM UTC (8 PM EDT) (0m downtime)</title>
   </circle>
   <circle cx="526.9840471086897" cy="339.1851505601713" r="4.39317652729776" fill="#f59e0b" class="incident-point">
-    <title>10/17/2023: Issues viewing and submitting Heroku support tickets (193m downtime)</title>
+    <title>10/17/2023: Issues viewing and submitting Heroku support tickets (3h13m downtime)</title>
   </circle>
   <circle cx="527.3779374672098" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>10/18/2023: Heroku Maintenance scheduled on November 1st, 2023 at 12:00 PM UTC (0m downtime)</title>
@@ -1276,7 +1270,7 @@
     <title>11/2/2023: Issues with Heroku Platform API (0m downtime)</title>
   </circle>
   <circle cx="532.5704276707562" cy="339.7086807702167" r="3" fill="#f59e0b" class="incident-point">
-    <title>11/2/2023: Issues with Dashboard (69m downtime)</title>
+    <title>11/2/2023: Issues with Dashboard (1h9m downtime)</title>
   </circle>
   <circle cx="533.8268345064654" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>11/6/2023: Issues creating Heroku Teams (0m downtime)</title>
@@ -1285,10 +1279,10 @@
     <title>11/6/2023: Issue with new user signups (0m downtime)</title>
   </circle>
   <circle cx="534.2268353359411" cy="339.6200183959348" r="3" fill="#dc2626" class="incident-point">
-    <title>11/7/2023: Platform API Outage (90m downtime)</title>
+    <title>11/7/2023: Platform API Outage (1h30m downtime)</title>
   </circle>
   <circle cx="534.4949910036448" cy="339.74245691280026" r="3" fill="#f59e0b" class="incident-point">
-    <title>11/8/2023: Issues with upstream DNS provider (61m downtime)</title>
+    <title>11/8/2023: Issues with upstream DNS provider (1h1m downtime)</title>
   </circle>
   <circle cx="536.9192028462076" cy="339.9155596435411" r="3" fill="#f59e0b" class="incident-point">
     <title>11/15/2023: Issues with Heroku Builds (20m downtime)</title>
@@ -1318,7 +1312,7 @@
     <title>2/14/2024: Heroku Maintenance scheduled on February 28th, 2024 at 2:00AM UTC (9:00PM EST, February 27th) (0m downtime)</title>
   </circle>
   <circle cx="567.8048133092141" cy="337.3232407002518" r="7.962411694957753" fill="#f59e0b" class="incident-point">
-    <title>2/15/2024: Heroku API experiencing higher latency (634m downtime)</title>
+    <title>2/15/2024: Heroku API experiencing higher latency (10h34m downtime)</title>
   </circle>
   <circle cx="570.6576981911209" cy="339.94511376830167" r="3" fill="#f59e0b" class="incident-point">
     <title>2/23/2024: Data Dashboard Issue (13m downtime)</title>
@@ -1366,10 +1360,10 @@
     <title>5/4/2024: DNS propagation delays (0m downtime)</title>
   </circle>
   <circle cx="595.6840720620835" cy="339.3751413622039" r="3.847076812334269" fill="#f59e0b" class="incident-point">
-    <title>5/7/2024: Container Builds Stuck in Pending (148m downtime)</title>
+    <title>5/7/2024: Container Builds Stuck in Pending (2h28m downtime)</title>
   </circle>
   <circle cx="596.079137511172" cy="339.5186899681841" r="3.3763886032268267" fill="#f59e0b" class="incident-point">
-    <title>5/8/2024: Heroku Dashboard Partially Unavailable (114m downtime)</title>
+    <title>5/8/2024: Heroku Dashboard Partially Unavailable (1h54m downtime)</title>
   </circle>
   <circle cx="598.5411872700365" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>5/15/2024: Heroku Maintenance scheduled on May 30th, 2024 at 02:00 UTC (May 29th 10:00 PM EDT) (0m downtime)</title>
@@ -1390,16 +1384,16 @@
     <title>6/6/2024: Heroku Front End Authentication Outage (0m downtime)</title>
   </circle>
   <circle cx="612.6643657932518" cy="333.4685384279015" r="8" fill="#f59e0b" class="incident-point">
-    <title>6/26/2024: Heroku Connect Provisioning Errors (1547m downtime)</title>
+    <title>6/26/2024: Heroku Connect Provisioning Errors (25h47m downtime)</title>
   </circle>
   <circle cx="622.172023581994" cy="339.48069180777753" r="3.5071355833500366" fill="#f59e0b" class="incident-point">
-    <title>7/24/2024: Potential Platform Issues (123m downtime)</title>
+    <title>7/24/2024: Potential Platform Issues (2h3m downtime)</title>
   </circle>
   <circle cx="622.3499322940463" cy="339.5018018968923" r="3.4351128074635335" fill="#f59e0b" class="incident-point">
-    <title>7/25/2024: Potential Platform Connectivity Issues (118m downtime)</title>
+    <title>7/25/2024: Potential Platform Connectivity Issues (1h58m downtime)</title>
   </circle>
   <circle cx="623.3985831172664" cy="338.60251210060466" r="5.75325994545701" fill="#f59e0b" class="incident-point">
-    <title>7/28/2024: Issues with Essential Tier Databases (331m downtime)</title>
+    <title>7/28/2024: Issues with Essential Tier Databases (5h31m downtime)</title>
   </circle>
   <circle cx="623.8455875694772" cy="339.7931211266756" r="3" fill="#f59e0b" class="incident-point">
     <title>7/29/2024: Intermittent routing availability for some applications (49m downtime)</title>
@@ -1417,25 +1411,25 @@
     <title>9/9/2024: Investigating Intermittent Login Issues (0m downtime)</title>
   </circle>
   <circle cx="647.8978113592549" cy="338.80939097392906" r="5.310367218940701" fill="#dc2626" class="incident-point">
-    <title>10/8/2024: Routing failures on Common Runtime, EU region (282m downtime)</title>
+    <title>10/8/2024: Routing failures on Common Runtime, EU region (4h42m downtime)</title>
   </circle>
   <circle cx="648.1741926609373" cy="339.286478987922" r="4.110960958218893" fill="#f59e0b" class="incident-point">
-    <title>10/9/2024: Routing failures on Common Runtime, EU region (169m downtime)</title>
+    <title>10/9/2024: Routing failures on Common Runtime, EU region (2h49m downtime)</title>
   </circle>
   <circle cx="650.297111281768" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>10/15/2024: Heroku Maintenance scheduled on Thursday, October 31, 2024 at 01:00 UTC (Wednesday, October 30, 21:00 EDT) (0m downtime)</title>
   </circle>
   <circle cx="650.377487476645" cy="339.5735761998824" r="3.1780497164141406" fill="#f59e0b" class="incident-point">
-    <title>10/16/2024: Issues with Buildpacks when using a GitHub URL (101m downtime)</title>
+    <title>10/16/2024: Issues with Buildpacks when using a GitHub URL (1h41m downtime)</title>
   </circle>
   <circle cx="650.633892238665" cy="329.31829490794496" r="8" fill="#f59e0b" class="incident-point">
-    <title>10/16/2024: Open-Source Repository Engagement Data (2530m downtime)</title>
+    <title>10/16/2024: Open-Source Repository Engagement Data (42h10m downtime)</title>
   </circle>
   <circle cx="654.6872496452263" cy="339.93244771483285" r="3" fill="#f59e0b" class="incident-point">
     <title>10/28/2024: HTTP Redirect Loop on Common Runtime, EU region (16m downtime)</title>
   </circle>
   <circle cx="655.3370747295392" cy="339.7297908593314" r="3" fill="#f59e0b" class="incident-point">
-    <title>10/30/2024: Application Language Metrics and Release Phase Reporting Delay (64m downtime)</title>
+    <title>10/30/2024: Application Language Metrics and Release Phase Reporting Delay (1h4m downtime)</title>
   </circle>
   <circle cx="659.4482465920646" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>11/11/2024: Issues accessing Heroku Dashboard (0m downtime)</title>
@@ -1447,7 +1441,7 @@
     <title>11/19/2024: Intermittent Delays in Private Space Creation (30m downtime)</title>
   </circle>
   <circle cx="662.4795102222512" cy="339.7466789306232" r="3" fill="#f59e0b" class="incident-point">
-    <title>11/20/2024: Node.js Build Timeout Errors (60m downtime)</title>
+    <title>11/20/2024: Node.js Build Timeout Errors (1h downtime)</title>
   </circle>
   <circle cx="662.7876189692797" cy="339.84800735837393" r="3" fill="#f59e0b" class="incident-point">
     <title>11/21/2024: Yarn Install Build Timeout Errors for Ruby Apps (36m downtime)</title>
@@ -1459,16 +1453,16 @@
     <title>1/9/2025: Investigating an issue with data.heroku.com (12m downtime)</title>
   </circle>
   <circle cx="687.1021229739192" cy="339.59468628899714" r="3.0983866769659336" fill="#f59e0b" class="incident-point">
-    <title>2/1/2025: Investigating an issue with Review Apps (96m downtime)</title>
+    <title>2/1/2025: Investigating an issue with Review Apps (1h36m downtime)</title>
   </circle>
   <circle cx="694.8697066490081" cy="339.7466789306232" r="3" fill="#f59e0b" class="incident-point">
-    <title>2/24/2025: Issue with Platform API in all regions (60m downtime)</title>
+    <title>2/24/2025: Issue with Platform API in all regions (1h downtime)</title>
   </circle>
   <circle cx="694.9576034235226" cy="339.3202551305056" r="4.012480529547776" fill="#f59e0b" class="incident-point">
-    <title>2/24/2025: Issue with Delayed Delivery of Webhooks (161m downtime)</title>
+    <title>2/24/2025: Issue with Delayed Delivery of Webhooks (2h41m downtime)</title>
   </circle>
   <circle cx="696.2748799506738" cy="339.7297908593314" r="3" fill="#f59e0b" class="incident-point">
-    <title>2/28/2025: Issue with Data API Calls (64m downtime)</title>
+    <title>2/28/2025: Issue with Data API Calls (1h4m downtime)</title>
   </circle>
   <circle cx="698.0325804228529" cy="339.843785340551" r="3" fill="#f59e0b" class="incident-point">
     <title>3/5/2025: Investigating an issue with Automated Certificate Management (37m downtime)</title>
@@ -1486,7 +1480,7 @@
     <title>3/17/2025: Issue managing Heroku Data add-ons (0m downtime)</title>
   </circle>
   <circle cx="702.2368194583939" cy="339.54402207512175" r="3.286335345030997" fill="#f59e0b" class="incident-point">
-    <title>3/18/2025: Issue with Heroku Connect (108m downtime)</title>
+    <title>3/18/2025: Issue with Heroku Connect (1h48m downtime)</title>
   </circle>
   <circle cx="703.0450467513239" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>3/20/2025: Issue with Heroku Platform API (0m downtime)</title>
@@ -1495,13 +1489,13 @@
     <title>3/25/2025: Issue with Application Logs (32m downtime)</title>
   </circle>
   <circle cx="709.8605720479133" cy="339.71712480586257" r="3" fill="#f59e0b" class="incident-point">
-    <title>4/9/2025: Issue with Heroku Platform API (67m downtime)</title>
+    <title>4/9/2025: Issue with Heroku Platform API (1h7m downtime)</title>
   </circle>
   <circle cx="719.2812731345955" cy="339.77623305538384" r="3" fill="#f59e0b" class="incident-point">
     <title>5/7/2025: Investigating an issue with one-off dynos in Cedar Private Spaces (53m downtime)</title>
   </circle>
   <circle cx="719.3926717204778" cy="335.70620787406324" r="8" fill="#f59e0b" class="incident-point">
-    <title>5/8/2025: Investigating an issue with one-off dynos in Cedar Private Spaces (1017m downtime)</title>
+    <title>5/8/2025: Investigating an issue with one-off dynos in Cedar Private Spaces (16h57m downtime)</title>
   </circle>
   <circle cx="719.9569502114126" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>5/9/2025: Issue with Data Clips in all regions (0m downtime)</title>
@@ -1516,13 +1510,13 @@
     <title>5/28/2025: Investigating an Issue with Managed Inference and Agents (0m downtime)</title>
   </circle>
   <circle cx="730.6697808870828" cy="336.01441517513837" r="8" fill="#dc2626" class="incident-point">
-    <title>6/10/2025: Investigating an issue with access to Heroku services (944m downtime)</title>
+    <title>6/10/2025: Investigating an issue with access to Heroku services (15h44m downtime)</title>
   </circle>
   <circle cx="733.4954036678032" cy="339.59468628899714" r="3.0983866769659336" fill="#f59e0b" class="incident-point">
-    <title>6/18/2025: Investigating issues with dyno formations and autoscaling (96m downtime)</title>
+    <title>6/18/2025: Investigating issues with dyno formations and autoscaling (1h36m downtime)</title>
   </circle>
   <circle cx="737.9200896939718" cy="339.5313560216529" r="3.331666249791536" fill="#f59e0b" class="incident-point">
-    <title>7/1/2025: Stopped processes continue to produce logs (111m downtime)</title>
+    <title>7/1/2025: Stopped processes continue to produce logs (1h51m downtime)</title>
   </circle>
   <circle cx="740" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>7/7/2025: Issue with Heroku Platform API (0m downtime)</title>
