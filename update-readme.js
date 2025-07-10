@@ -3,6 +3,12 @@ import { readFile, writeFile } from 'fs/promises';
 // Read current README
 const readme = await readFile('README.md', 'utf-8');
 
+// Read incidents data to compute year range
+const incidentsData = JSON.parse(await readFile('incidents.json', 'utf-8'));
+const years = incidentsData.map(incident => new Date(incident.date).getFullYear());
+const minYear = Math.min(...years);
+const maxYear = Math.max(...years);
+
 // Check if the SVG is already embedded
 const svgEmbedRegex = /!\[Heroku Incidents Timeline\]\(incidents\.svg\)/;
 const graphSectionRegex = /## Incident Timeline[\s\S]*?(?=\n##|$)/;
@@ -18,7 +24,7 @@ if (!svgEmbedRegex.test(readme)) {
 
 ![Heroku Incidents Timeline](incidents.svg)
 
-*This graph shows Heroku incidents from 2020-2025, with downtime duration on the Y-axis and time on the X-axis. Circle size represents downtime duration, and colors indicate severity: red (critical), yellow (warning), gray (other/no impact).*
+*This graph shows Heroku incidents from ${minYear}-${maxYear}, with downtime duration on the Y-axis and time on the X-axis. Circle size represents downtime duration, and colors indicate severity: red (critical), yellow (warning), gray (other/no impact).*
 `;
 
   // Insert after the first paragraph
@@ -29,6 +35,12 @@ if (!svgEmbedRegex.test(readme)) {
 } else {
   // Update existing graph section if needed
   console.log('SVG already embedded in README.md');
+  
+  // Update the description text with dynamic years
+  const descriptionRegex = /\*This graph shows Heroku incidents from \d{4}-\d{4}, with downtime duration on the Y-axis and time on the X-axis\. Circle size represents downtime duration, and colors indicate severity: red \(critical\), yellow \(warning\), gray \(other\/no impact\)\.\*/g;
+  const newDescription = `*This graph shows Heroku incidents from ${minYear}-${maxYear}, with downtime duration on the Y-axis and time on the X-axis. Circle size represents downtime duration, and colors indicate severity: red (critical), yellow (warning), gray (other/no impact).*`;
+  
+  updatedReadme = readme.replace(descriptionRegex, newDescription);
 }
 
 // Write updated README

@@ -6,7 +6,7 @@
 
 ![Heroku Incidents Timeline](incidents.svg)
 
-*This graph shows Heroku incidents from 2020-2025, with downtime duration on the Y-axis and time on the X-axis. Circle size represents downtime duration, and colors indicate severity: red (critical), yellow (warning), gray (other/no impact).*
+*This graph shows Heroku incidents from 2009-2025, with downtime duration on the Y-axis and time on the X-axis. Circle size represents downtime duration, and colors indicate severity: red (critical), yellow (warning), gray (other/no impact).*
 
 
 
@@ -14,7 +14,7 @@
 
 ![Heroku Incidents Timeline](incidents.svg?sanitize=true)
 
-*This graph shows Heroku incidents from 2020-2025, with downtime duration on the Y-axis and time on the X-axis. Circle size represents downtime duration, and colors indicate severity: red (critical), yellow (warning), gray (other/no impact).*
+*This graph shows Heroku incidents from 2009-2025, with downtime duration on the Y-axis and time on the X-axis. Circle size represents downtime duration, and colors indicate severity: red (critical), yellow (warning), gray (other/no impact).*
 
 ### Interactive Timeline
 
