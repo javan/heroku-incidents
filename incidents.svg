@@ -1063,7 +1063,7 @@
     <title>2/25/2023: Service disruption for eco dynos in Common Runtime US apps (39m downtime)</title>
   </circle>
   <circle cx="451.97237569442666" cy="340" r="3" fill="#e5e7eb" class="incident-point">
-    <title>3/9/2023: Common Runtime Control Plane Maintenance on Tuesday March 21, 2023 starting at 14:00 UTC for EU & US (0m downtime)</title>
+    <title>3/9/2023: Common Runtime Control Plane Maintenance on Tuesday March 21, 2023 starting at 14:00 UTC for EU &amp; US (0m downtime)</title>
   </circle>
   <circle cx="454.3451185700945" cy="340" r="3" fill="#e5e7eb" class="incident-point">
     <title>3/16/2023: Salesforce Functions Maintenance scheduled on March 22, 2023 at 18:00 UTC (0m downtime)</title>
@@ -1078,7 +1078,7 @@
     <title>3/20/2023: Heroku Homepage Unavailability (130m downtime)</title>
   </circle>
   <circle cx="456.4184483689397" cy="340" r="3" fill="#e5e7eb" class="incident-point">
-    <title>3/22/2023: Private Spaces & Common Runtime Maintenance on Wednesday, March 29, 2023, starting at  16:00 UTC (0m downtime)</title>
+    <title>3/22/2023: Private Spaces &amp; Common Runtime Maintenance on Wednesday, March 29, 2023, starting at  16:00 UTC (0m downtime)</title>
   </circle>
   <circle cx="460.1747428798152" cy="339.38780741567274" r="3.8078865529319543" fill="#f59e0b" class="incident-point">
     <title>4/3/2023: H20 "App Boot Timeout" errors on Standard-2x Dynos (145m downtime)</title>

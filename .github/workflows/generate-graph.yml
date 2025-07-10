@@ -30,3 +30,4 @@ jobs:
         with:
           commit_message: 'Update incident graph'
           file_pattern: 'incidents.svg README.md'
+          skip_dirty_check: false

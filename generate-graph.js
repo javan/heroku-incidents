@@ -11,10 +11,10 @@ const processedData = incidentsData
     title: incident.title,
     downtime: incident.downtime,
     totalDowntime: incident.downtime.reduce((sum, d) => sum + d.minutes, 0),
-    maxSeverity: incident.downtime.reduce((max, d) => {
+    maxSeverity: incident.downtime.length > 0 ? incident.downtime.reduce((max, d) => {
       const severityScore = d.severity === 'red' ? 3 : d.severity === 'yellow' ? 2 : 1;
       return Math.max(max, severityScore);
-    }, 0)
+    }, 0) : 0
   }))
   .filter(incident => incident.date.getFullYear() >= 2020) // Focus on recent years
   .sort((a, b) => a.date - b.date);
@@ -107,9 +107,12 @@ processedData.forEach(incident => {
   const color = getSeverityColor(incident.maxSeverity);
   const radius = Math.max(3, Math.min(8, Math.sqrt(incident.totalDowntime / 10)));
   
+  // Escape HTML entities in title for SVG
+  const escapedTitle = incident.title.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  
   svg += `
   <circle cx="${x}" cy="${y}" r="${radius}" fill="${color}" class="incident-point">
-    <title>${incident.date.toLocaleDateString()}: ${incident.title} (${incident.totalDowntime}m downtime)</title>
+    <title>${incident.date.toLocaleDateString()}: ${escapedTitle} (${incident.totalDowntime}m downtime)</title>
   </circle>`;
 });
 
@@ -132,6 +135,16 @@ svg += `
 // Write SVG file
 await writeFile('incidents.svg', svg);
 
-console.log(`Generated incidents.svg with ${processedData.length} incidents`);
+// Calculate some statistics
+const totalIncidents = processedData.length;
+const incidentsWithDowntime = processedData.filter(i => i.totalDowntime > 0).length;
+const avgDowntime = processedData.reduce((sum, i) => sum + i.totalDowntime, 0) / totalIncidents;
+const criticalIncidents = processedData.filter(i => i.maxSeverity === 3).length;
+const warningIncidents = processedData.filter(i => i.maxSeverity === 2).length;
+
+console.log(`Generated incidents.svg with ${totalIncidents} incidents`);
 console.log(`Date range: ${minDate.toLocaleDateString()} to ${maxDate.toLocaleDateString()}`);
 console.log(`Max downtime: ${maxDowntime} minutes`);
+console.log(`Incidents with downtime: ${incidentsWithDowntime}/${totalIncidents}`);
+console.log(`Average downtime: ${Math.round(avgDowntime)} minutes`);
+console.log(`Critical incidents: ${criticalIncidents}, Warning incidents: ${warningIncidents}`);
