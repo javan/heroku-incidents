@@ -1,5 +1,25 @@
 [
   {
+    "id": 2860,
+    "url": "https://status.heroku.com/incidents/2860",
+    "date": "2025-07-16T18:16:00.000Z",
+    "title": "data.heroku.com Dashboard degradation",
+    "downtime": [
+      {
+        "system": "Data",
+        "severity": "yellow",
+        "minutes": 213
+      }
+    ]
+  },
+  {
+    "id": 2859,
+    "url": "https://status.heroku.com/incidents/2859",
+    "date": "2025-07-16T17:56:00.000Z",
+    "title": "Performance Degradation for Common Runtime in EU Region",
+    "downtime": []
+  },
+  {
     "id": 2858,
     "url": "https://status.heroku.com/incidents/2858",
     "date": "2025-07-16T17:18:00.000Z",
