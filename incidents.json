@@ -1,5 +1,25 @@
 [
   {
+    "id": 2862,
+    "url": "https://status.heroku.com/incidents/2862",
+    "date": "2025-07-21T20:41:00.000Z",
+    "title": "Investigating an issue with Automated Cert Management",
+    "downtime": [
+      {
+        "system": "Tools",
+        "severity": "red",
+        "minutes": 731
+      }
+    ]
+  },
+  {
+    "id": 2861,
+    "url": "https://status.heroku.com/incidents/2861",
+    "date": "2025-07-21T20:11:00.000Z",
+    "title": "Issue with GitHub Deployments",
+    "downtime": []
+  },
+  {
     "id": 2860,
     "url": "https://status.heroku.com/incidents/2860",
     "date": "2025-07-16T18:16:00.000Z",
