@@ -1,5 +1,18 @@
 [
   {
+    "id": 2863,
+    "url": "https://status.heroku.com/incidents/2863",
+    "date": "2025-07-22T18:36:00.000Z",
+    "title": "Issue with uneven routing distribution",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "red",
+        "minutes": 418
+      }
+    ]
+  },
+  {
     "id": 2862,
     "url": "https://status.heroku.com/incidents/2862",
     "date": "2025-07-21T20:41:00.000Z",
