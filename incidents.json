@@ -1,5 +1,18 @@
 [
   {
+    "id": 2868,
+    "url": "https://status.heroku.com/incidents/2868",
+    "date": "2025-08-27T18:14:00.000Z",
+    "title": "Intermittent routing availability for some applications in EU region",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 66
+      }
+    ]
+  },
+  {
     "id": 2867,
     "url": "https://status.heroku.com/incidents/2867",
     "date": "2025-08-21T20:06:00.000Z",
