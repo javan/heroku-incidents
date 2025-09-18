@@ -1,5 +1,12 @@
 [
   {
+    "id": 2906,
+    "url": "https://status.heroku.com/incidents/2906",
+    "date": "2025-09-17T19:03:00.000Z",
+    "title": "Maintenance scheduled October 10, 2025",
+    "downtime": []
+  },
+  {
     "id": 2873,
     "url": "https://status.heroku.com/incidents/2873",
     "date": "2025-09-16T16:19:00.000Z",
