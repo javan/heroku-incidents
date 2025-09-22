@@ -1,5 +1,18 @@
 [
   {
+    "id": 2907,
+    "url": "https://status.heroku.com/incidents/2907",
+    "date": "2025-09-22T04:24:00.000Z",
+    "title": "Investigating an Issue with Heroku AI responses for gpt-oss-120b model",
+    "downtime": [
+      {
+        "system": "Data",
+        "severity": "yellow",
+        "minutes": 120
+      }
+    ]
+  },
+  {
     "id": 2906,
     "url": "https://status.heroku.com/incidents/2906",
     "date": "2025-09-17T19:03:00.000Z",
