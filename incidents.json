@@ -1,5 +1,18 @@
 [
   {
+    "id": 2908,
+    "url": "https://status.heroku.com/incidents/2908",
+    "date": "2025-09-24T23:26:00.000Z",
+    "title": "Investigating an issue with elevated H99 Errors",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "red",
+        "minutes": 153
+      }
+    ]
+  },
+  {
     "id": 2907,
     "url": "https://status.heroku.com/incidents/2907",
     "date": "2025-09-22T04:24:00.000Z",
