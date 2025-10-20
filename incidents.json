@@ -1,5 +1,28 @@
 [
   {
+    "id": 2910,
+    "url": "https://status.heroku.com/incidents/2910",
+    "date": "2025-10-20T08:43:00.000Z",
+    "title": "Service Disruption on Heroku",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "red",
+        "minutes": 352
+      },
+      {
+        "system": "Data",
+        "severity": "red",
+        "minutes": 352
+      },
+      {
+        "system": "Tools",
+        "severity": "red",
+        "minutes": 352
+      }
+    ]
+  },
+  {
     "id": 2909,
     "url": "https://status.heroku.com/incidents/2909",
     "date": "2025-09-26T19:01:00.000Z",
