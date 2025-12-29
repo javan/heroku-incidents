@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: "13 17 * * *" # Daily at 7:13pm UTC (3:13pm ET) → https://crontab.guru/#13_17_*_*_*
 
+permissions:
+  contents: write
+  actions: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -28,5 +32,12 @@ jobs:
       - run: echo "<pre>$(node .)</pre>" >> $GITHUB_STEP_SUMMARY
 
       - uses: stefanzweifel/git-auto-commit-action@v4
+        id: auto-commit
         with:
           commit_message: Update incidents
+
+      - name: Trigger graph generation
+        if: steps.auto-commit.outputs.changes_detected == 'true'
+        run: gh workflow run generate-graph.yml
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

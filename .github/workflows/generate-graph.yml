@@ -7,6 +7,10 @@ name: Generate Incident Graph
       - 'incidents.json'
   workflow_dispatch:
 
+permissions:
+  contents: write
+  actions: write
+
 jobs:
   generate-graph:
     runs-on: ubuntu-latest
@@ -38,9 +42,6 @@ jobs:
       
       - name: Trigger Pages deployment
         if: github.ref == 'refs/heads/main'
-        run: |
-          curl -X POST \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy-pages.yml/dispatches \
-            -d '{"ref":"main"}'
+        run: gh workflow run deploy-pages.yml
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
