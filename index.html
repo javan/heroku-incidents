@@ -279,20 +279,7 @@
         <header>
             <h1>Heroku Incidents Interactive Timeline</h1>
             <p class="subtitle">Comprehensive view of Heroku service incidents and downtime</p>
-  <p class="subtitle" style="font-size: 0.9rem; color: #a0aec0; margin-top: 5px;">
-    Last updated: Monday, December 29, 2025
-  </p>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-            
-            
+            <p class="subtitle" style="font-size: 0.9rem; color: #a0aec0; margin-top: 5px;">Last updated: <span id="last-updated">Monday, December 29, 2025</span></p>
             <div class="stats" id="stats">
                 <div class="stat-item">
                     <div class="stat-value" id="total-incidents">-</div>
@@ -344,178 +331,87 @@
         </div>
     </div>
 
-    <script>
-        let allIncidents = [];
-        let filteredIncidents = [];
+    <script type="module">
+        const $ = (id) => document.getElementById(id);
 
-        // Load incidents data
-        async function loadIncidents() {
+        const severityScore = (d) => d.severity === 'red' ? 3 : d.severity === 'yellow' ? 2 : 1;
+        const severityLabel = (score) => score === 3 ? 'critical' : score === 2 ? 'warning' : 'other';
+        const formatDowntime = (mins) => mins >= 60 ? `${Math.floor(mins / 60)}h${mins % 60 ? ` ${mins % 60}m` : ''}` : `${mins}m`;
+        const escapeHtml = (text) => Object.assign(document.createElement('div'), { textContent: text }).innerHTML;
+
+        let incidents = [];
+
+        async function load() {
             try {
-                const response = await fetch('incidents.json');
-                const data = await response.json();
-                allIncidents = data
-                    .map(incident => ({
-                        ...incident,
-                        date: new Date(incident.date),
-                        totalDowntime: incident.downtime.reduce((sum, d) => sum + d.minutes, 0),
-                        maxSeverity: incident.downtime.length > 0 ? incident.downtime.reduce((max, d) => {
-                            const severityScore = d.severity === 'red' ? 3 : d.severity === 'yellow' ? 2 : 1;
-                            return Math.max(max, severityScore);
-                        }, 0) : 0
-                    }))
+                const data = await fetch('incidents.json').then(r => r.json());
+                incidents = data.map(i => ({
+                    ...i,
+                    date: new Date(i.date),
+                    totalDowntime: i.downtime.reduce((sum, d) => sum + d.minutes, 0),
+                    maxSeverity: Math.max(0, ...i.downtime.map(severityScore))
+                })).sort((a, b) => b.date - a.date);
 
-                    .sort((a, b) => b.date - a.date); // Sort by date descending
+                const years = [...new Set(incidents.map(i => i.date.getFullYear()))].sort((a, b) => b - a);
+                $('year-filter').append(...years.map(y => Object.assign(document.createElement('option'), { value: y, textContent: y })));
 
-                initializeFilters();
                 updateStats();
-                filterIncidents();
+                render();
             } catch (error) {
                 console.error('Error loading incidents:', error);
-                document.getElementById('timeline').innerHTML = '<div class="no-incidents">Error loading incidents data</div>';
+                $('timeline').innerHTML = '<div class="no-incidents">Error loading incidents data</div>';
             }
         }
 
-        // Initialize filter options
-        function initializeFilters() {
-            const yearFilter = document.getElementById('year-filter');
-            const years = [...new Set(allIncidents.map(i => i.date.getFullYear()))].sort((a, b) => b - a);
-            
-            years.forEach(year => {
-                const option = document.createElement('option');
-                option.value = year;
-                option.textContent = year;
-                yearFilter.appendChild(option);
-            });
-        }
-
-        // Update statistics
         function updateStats() {
-            const totalIncidents = allIncidents.length;
-            const criticalIncidents = allIncidents.filter(i => i.maxSeverity === 3).length;
-            const warningIncidents = allIncidents.filter(i => i.maxSeverity === 2).length;
-            const avgDowntime = totalIncidents > 0 ? 
-                Math.round(allIncidents.reduce((sum, i) => sum + i.totalDowntime, 0) / totalIncidents) : 0;
-
-            document.getElementById('total-incidents').textContent = totalIncidents;
-            document.getElementById('critical-incidents').textContent = criticalIncidents;
-            document.getElementById('warning-incidents').textContent = warningIncidents;
-            document.getElementById('avg-downtime').textContent = formatDowntime(avgDowntime);
+            $('total-incidents').textContent = incidents.length;
+            $('critical-incidents').textContent = incidents.filter(i => i.maxSeverity === 3).length;
+            $('warning-incidents').textContent = incidents.filter(i => i.maxSeverity === 2).length;
+            $('avg-downtime').textContent = formatDowntime(Math.round(incidents.reduce((sum, i) => sum + i.totalDowntime, 0) / incidents.length) || 0);
         }
 
-        // Filter incidents
-        function filterIncidents() {
-            const yearFilter = document.getElementById('year-filter').value;
-            const severityFilter = document.getElementById('severity-filter').value;
-            const searchFilter = document.getElementById('search-filter').value.toLowerCase();
+        function render() {
+            const year = $('year-filter').value;
+            const severity = $('severity-filter').value;
+            const search = $('search-filter').value.toLowerCase();
 
-            filteredIncidents = allIncidents.filter(incident => {
-                // Year filter
-                if (yearFilter !== 'all' && incident.date.getFullYear() !== parseInt(yearFilter)) {
-                    return false;
-                }
+            const filtered = incidents.filter(i =>
+                (year === 'all' || i.date.getFullYear() === +year) &&
+                (severity === 'all' || severityLabel(i.maxSeverity) === severity) &&
+                (!search || i.title.toLowerCase().includes(search))
+            );
 
-                // Severity filter
-                if (severityFilter !== 'all') {
-                    const severity = incident.maxSeverity === 3 ? 'critical' : 
-                                   incident.maxSeverity === 2 ? 'warning' : 'other';
-                    if (severity !== severityFilter) {
-                        return false;
-                    }
-                }
-
-                // Search filter
-                if (searchFilter && !incident.title.toLowerCase().includes(searchFilter)) {
-                    return false;
-                }
-
-                return true;
-            });
-
-            renderTimeline();
-        }
-
-        // Render timeline
-        function renderTimeline() {
-            const timeline = document.getElementById('timeline');
-            
-            if (filteredIncidents.length === 0) {
-                timeline.innerHTML = '<div class="no-incidents">No incidents found matching your filters</div>';
+            if (!filtered.length) {
+                $('timeline').innerHTML = '<div class="no-incidents">No incidents found matching your filters</div>';
                 return;
             }
 
-            const timelineHTML = filteredIncidents.map(incident => {
-                const severityClass = incident.maxSeverity === 3 ? 'critical' : 
-                                    incident.maxSeverity === 2 ? 'warning' : 'other';
-                const severityBadge = incident.maxSeverity === 3 ? 'Critical' : 
-                                    incident.maxSeverity === 2 ? 'Warning' : 'Other';
-                
-                const downtimeItems = incident.downtime.map(d => 
-                    `<div class="downtime-item">
-                        <span class="downtime-service">${d.system}</span>
-                        <span class="downtime-duration">${formatDowntime(d.minutes)}</span>
-                    </div>`
-                ).join('');
-
+            $('timeline').innerHTML = filtered.map(i => {
+                const sev = severityLabel(i.maxSeverity);
                 return `
-                    <div class="timeline-item ${severityClass}">
-                        <div class="timeline-date">
-                            ${incident.date.toLocaleDateString('en-US', { 
-                                weekday: 'short', 
-                                year: 'numeric', 
-                                month: 'short', 
-                                day: 'numeric' 
-                            })}
-                        </div>
+                    <div class="timeline-item ${sev}">
+                        <div class="timeline-date">${i.date.toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' })}</div>
                         <div class="timeline-content">
-                            <div class="timeline-title">${escapeHtml(incident.title)}</div>
+                            <div class="timeline-title">${escapeHtml(i.title)}</div>
                             <div class="timeline-meta">
-                                <div class="meta-item">
-                                    <span class="severity-badge severity-${severityClass}">${severityBadge}</span>
-                                </div>
-                                <div class="meta-item">
-                                    <strong>Total Downtime:</strong> ${formatDowntime(incident.totalDowntime)}
-                                </div>
-                                <div class="meta-item">
-                                    <strong>Services Affected:</strong> ${incident.downtime.length}
-                                </div>
+                                <div class="meta-item"><span class="severity-badge severity-${sev}">${sev}</span></div>
+                                <div class="meta-item"><strong>Total Downtime:</strong> ${formatDowntime(i.totalDowntime)}</div>
+                                <div class="meta-item"><strong>Services Affected:</strong> ${i.downtime.length}</div>
                             </div>
-                            ${incident.downtime.length > 0 ? `
-                                <div class="downtime-info">
-                                    ${downtimeItems}
-                                </div>
-                            ` : ''}
+                            ${i.downtime.length ? `<div class="downtime-info">${i.downtime.map(d => `
+                                <div class="downtime-item">
+                                    <span class="downtime-service">${d.system}</span>
+                                    <span class="downtime-duration">${formatDowntime(d.minutes)}</span>
+                                </div>`).join('')}</div>` : ''}
                         </div>
-                    </div>
-                `;
+                    </div>`;
             }).join('');
-
-            timeline.innerHTML = timelineHTML;
         }
 
-        // Format downtime duration
-        function formatDowntime(minutes) {
-            if (minutes >= 60) {
-                const hours = Math.floor(minutes / 60);
-                const mins = minutes % 60;
-                return mins > 0 ? `${hours}h ${mins}m` : `${hours}h`;
-            }
-            return `${minutes}m`;
-        }
+        $('year-filter').addEventListener('change', render);
+        $('severity-filter').addEventListener('change', render);
+        $('search-filter').addEventListener('input', render);
 
-        // Escape HTML
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
-
-        // Event listeners
-        document.getElementById('year-filter').addEventListener('change', filterIncidents);
-        document.getElementById('severity-filter').addEventListener('change', filterIncidents);
-        document.getElementById('search-filter').addEventListener('input', filterIncidents);
-
-        // Load data on page load
-        loadIncidents();
+        load();
     </script>
 </body>
 </html>
