@@ -6518,6 +6518,9 @@
   <circle cx="737.7005808904256" cy="340" r="3" fill="#e5e7eb" class="incident-point" >
     <title>1/28/2026: Heroku Platform Maintenance (0m downtime)</title>
   </circle>
+  <circle cx="739.3808830265076" cy="340" r="3" fill="#e5e7eb" class="incident-point" >
+    <title>2/12/2026: Heroku Platform Maintenance (0m downtime)</title>
+  </circle>
   <circle cx="740" cy="328.0740740740741" r="3.714835124201342" fill="#f59e0b" class="incident-point" >
     <title>2/18/2026: Heroku Service Disruption (2h18m downtime)</title>
   </circle>
