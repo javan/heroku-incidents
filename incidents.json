@@ -1,5 +1,12 @@
 [
   {
+    "id": 2917,
+    "url": "https://status.heroku.com/incidents/2917",
+    "date": "2026-02-23T22:28:00.000Z",
+    "title": "Heroku Retroactive Feature Degradation",
+    "downtime": []
+  },
+  {
     "id": 2916,
     "url": "https://status.heroku.com/incidents/2916",
     "date": "2026-02-12T15:23:00.000Z",
