@@ -1,5 +1,18 @@
 [
   {
+    "id": 2952,
+    "url": "https://status.heroku.com/incidents/2952",
+    "date": "2026-05-05T14:57:00.000Z",
+    "title": "Heroku Feature Disruption",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 50
+      }
+    ]
+  },
+  {
     "id": 2951,
     "url": "https://status.heroku.com/incidents/2951",
     "date": "2026-04-29T15:48:00.000Z",
