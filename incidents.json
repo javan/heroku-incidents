@@ -1,5 +1,12 @@
 [
   {
+    "id": 2955,
+    "url": "https://status.heroku.com/incidents/2955",
+    "date": "2026-06-09T17:01:00.000Z",
+    "title": "Heroku Retroactive Feature Disruption",
+    "downtime": []
+  },
+  {
     "id": 2954,
     "url": "https://status.heroku.com/incidents/2954",
     "date": "2026-05-22T14:49:00.000Z",
