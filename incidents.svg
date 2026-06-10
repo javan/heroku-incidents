@@ -6542,6 +6542,9 @@
   <circle cx="737.976855422277" cy="340" r="3" fill="#e5e7eb" class="incident-point" >
     <title>5/22/2026: Heroku Retroactive Feature Disruption (0m downtime)</title>
   </circle>
+  <circle cx="738.5419722306638" cy="340" r="3" fill="#e5e7eb" class="incident-point" >
+    <title>5/27/2026: Heroku Platform Maintenance (0m downtime)</title>
+  </circle>
   <circle cx="740" cy="340" r="3" fill="#e5e7eb" class="incident-point" >
     <title>6/9/2026: Heroku Retroactive Feature Disruption (0m downtime)</title>
   </circle>
