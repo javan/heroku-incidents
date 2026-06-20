@@ -1,5 +1,18 @@
 [
   {
+    "id": 2957,
+    "url": "https://status.heroku.com/incidents/2957",
+    "date": "2026-06-19T17:31:00.000Z",
+    "title": "Heroku Retroactive Service Disruption",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 22
+      }
+    ]
+  },
+  {
     "id": 2956,
     "url": "https://status.heroku.com/incidents/2956",
     "date": "2026-05-27T16:06:00.000Z",
