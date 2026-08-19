@@ -1,5 +1,12 @@
 [
   {
+    "id": 2962,
+    "url": "https://status.heroku.com/incidents/2962",
+    "date": "2026-08-18T21:37:00.000Z",
+    "title": "Heroku Status is now available on Salesforce Trust",
+    "downtime": []
+  },
+  {
     "id": 2961,
     "url": "https://status.heroku.com/incidents/2961",
     "date": "2026-08-10T15:19:00.000Z",
