@@ -1,5 +1,18 @@
 [
   {
+    "id": 2967,
+    "url": "https://status.heroku.com/incidents/2967",
+    "date": "2026-11-11T18:16:00.000Z",
+    "title": "Heroku Status is now available on Salesforce Trust",
+    "downtime": [
+      {
+        "system": "Apps",
+        "severity": "yellow",
+        "minutes": 178
+      }
+    ]
+  },
+  {
     "id": 2966,
     "url": "https://status.heroku.com/incidents/2966",
     "date": "2026-10-28T10:55:00.000Z",
